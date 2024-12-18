@@ -61,13 +61,13 @@ proxy-groups:
   - {name: 🍎 Apple, type: select, proxies: [🟢 直连, 🚀 节点选择]}
   - {name: 🎯 全球直连, type: select, proxies: [🟢 直连, 🚀 节点选择]}
   - {name: 🐟 漏网之鱼,!!merge <<: *pr}
-  - {name: 🇹🇼 台湾节点, type: select, include-all: true, filter: "(?i)台湾|台|tw|taiwan|tai wan"}
-  - {name: 🇭🇰 香港节点, type: select, include-all: true, filter: "(?i)香港|港|hk|hongkong|hong kong"}
-  - {name: 🇯🇵 日本节点, type: select, include-all: true, filter: "(?i)日本|日|jp|japan"}
-  - {name: 🇺🇲 美国节点, type: select, include-all: true, filter: "(?i)美国|美|us|unitedstates|united states"}
-  - {name: 🇸🇬 新加坡节点, type: select, include-all: true, filter: "(?i)新加坡|sg|SINGAPORE|Singapore"}
-  - {name: 🇰🇷 韩国节点, type: select, include-all: true, filter: "(?i)韩国|kr|KR|Korea|KOR"}  
-  - {name: ♻️ 香港自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(港|HK|(?i)Hong))^((?!(台|日|韩|新|深|美)).)*$"}
+  - {name: 🇹🇼 台湾节点, type: select, include-all: true, filter: "(?i)台湾|台|TW|tw|taiwan|tai wan"}
+  - {name: 🇭🇰 香港节点, type: select, include-all: true, filter: "(?i)香港|港|HK|hk|hongkong|hong kong"}
+  - {name: 🇯🇵 日本节点, type: select, include-all: true, filter: "(?i)日本|日|JP|jp|japan"}
+  - {name: 🇺🇲 美国节点, type: select, include-all: true, filter: "(?i)美国|美|US|us|unitedstates|united states"}
+  - {name: 🇸🇬 新加坡节点, type: select, include-all: true, filter: "(?i)新加坡|新|SG|sg|SINGAPORE|Singapore"}
+  - {name: 🇰🇷 韩国节点, type: select, include-all: true, filter: "(?i)韩国|韩|kr|KR|Korea|KOR"}  
+  - {name: ♻️ 香港自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(港|HK|(?i)Hong))^((?!(台|日|韩|新|美)).)*$"}
   - {name: ♻️ 自动选择, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "^((?!(直连)).)*$"}
   - {name: 🌐 全部节点, type: select, include-all: true}
 rules:
