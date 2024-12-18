@@ -8,15 +8,15 @@ proxy-providers:
       interval: 300
     proxy: 🟢 直连
     url: "https://sub.fusir.top:6767/fusir/download/Mitce?target=Clash"
-  Airport_02:
-    type: http
-    interval: 1800
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-    proxy: 🟢 直连
-    url: "https://sub.fusir.top:6767/fusir/download/SSONE?target=Clash"
+#  Airport_02:
+ #   type: http
+ #   interval: 1800
+ #   health-check:
+  #    enable: true
+  # url: https://www.gstatic.com/generate_204
+    #  interval: 300
+ #   proxy: 🟢 直连
+  #  url: "https://sub.fusir.top:6767/fusir/download/SSONE?target=Clash"
 
 
 unified-delay: true
