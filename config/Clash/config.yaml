@@ -7,7 +7,7 @@ proxy-providers:
       url: https://www.gstatic.com/generate_204
       interval: 300
     proxy: 🟢 直连
-    url: "https://sub.fusir.top:6767/fusir/download/Mitce?target=Clash"
+    url: "https://sub.fusir.top:6767/fusir/download/Mitce?target=ClashMeta"
  Airport_02:
    type: http
    interval: 1800
@@ -17,7 +17,6 @@ proxy-providers:
    interval: 300
    proxy: 🟢 直连
    url: "https://sub.fusir.top:6767/fusir/download/SSONE?target=Clash"
-
 
 unified-delay: true
 tcp-concurrent: true
@@ -46,7 +45,7 @@ proxies:
 pr: &pr {type: select, proxies: [🚀 节点选择,🇹🇼 台湾节点,🇭🇰 香港节点,🇯🇵 日本节点,🇺🇲 美国节点,🇸🇬 新加坡节点,🇰🇷 韩国节点,♻️ 自动选择,♻️ 香港自动,🌐 全部节点,🟢 直连]}
 
 proxy-groups:
-  - {name: 🚀 节点选择, type: select, proxies: [🇹🇼 台湾节点,🇭🇰 香港节点,🇯🇵 日本节点,🇺🇲 美国节点，🇸🇬 新加坡节点,🇰🇷 韩国节点,♻️ 自动选择,♻️ 香港自动,🌐 全部节点,🟢 直连]}
+  - {name: 🚀 节点选择, type: select, proxies: [🇹🇼 台湾节点,🇭🇰 香港节点,🇯🇵 日本节点,🇺🇲 美国节点,🇸🇬 新加坡节点,🇰🇷 韩国节点,♻️ 自动选择,♻️ 香港自动,🌐 全部节点,🟢 直连]}
   - {name: 📹 YouTube,!!merge <<: *pr}
   - {name: 🍀 Google,!!merge <<: *pr}
   - {name: 🤖 ChatGPT,!!merge <<: *pr}
@@ -67,7 +66,7 @@ proxy-groups:
   - {name: 🇺🇲 美国节点, type: select, include-all: true, filter: "(?i)美国|美|US|us|unitedstates|united states"}
   - {name: 🇸🇬 新加坡节点, type: select, include-all: true, filter: "(?i)新加坡|新|SG|sg|SINGAPORE|Singapore"}
   - {name: 🇰🇷 韩国节点, type: select, include-all: true, filter: "(?i)韩国|韩|kr|KR|Korea|KOR"}  
-  - {name: ♻️ 香港自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(港|HK|(?i)Hong))^((?!(台|日|韩|新|美)).)*$"}
+  - {name: ♻️ 香港自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(港|HK|(?i)Hong))^((?!(台|日|韩|新|深|美)).)*$"}
   - {name: ♻️ 自动选择, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "^((?!(直连)).)*$"}
   - {name: 🌐 全部节点, type: select, include-all: true}
 rules:
