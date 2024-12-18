@@ -7,7 +7,7 @@ proxy-providers:
       url: https://www.gstatic.com/generate_204
       interval: 300
     proxy: 🟢 直连
-    url: "订阅链接1"
+    url: "https://sub.fusir.top:6767/fusir/download/Mitce?target=Clash"
   Airport_02:
     type: http
     interval: 1800
@@ -16,7 +16,7 @@ proxy-providers:
       url: https://www.gstatic.com/generate_204
       interval: 300
     proxy: 🟢 直连
-    url: "订阅链接2"
+    url: "https://sub.fusir.top:6767/fusir/download/SSONE?target=Clash"
 
 
 unified-delay: true
@@ -43,24 +43,24 @@ proxies:
   type: direct
   udp: true
 
-pr: &pr {type: select, proxies: [🚀 节点选择, ♻️ 香港自动, 🇭🇰 香港节点, 🇹🇼 台湾节点, 🇯🇵 日本节点, 🇸🇬 新加坡节点, 🇺🇲 美国节点, 🐸 手动切换, ♻️ 自动选择, 🌐 全部节点,🟢 直连]}
+pr: &pr {type: select, proxies: [🚀 节点选择, ♻️ 香港自动, 🇭🇰 香港节点, 🇹🇼 台湾节点, 🇯🇵 日本节点, 🇸🇬 新加坡节点, 🇺🇲 美国节点, ♻️ 自动选择, 🌐 全部节点,🟢 直连]}
 
 proxy-groups:
-  - {name: 🚀 节点选择, type: select, proxies: [♻️ 香港自动, 🇭🇰 香港节点, 🇹🇼 台湾节点, 🇯🇵 日本节点, 🇸🇬 新加坡节点, 🇺🇲 美国节点, 🐸 手动切换, ♻️ 自动选择, 🌐 全部节点,🟢 直连]}
-  - {name: 📹 YouTube, <<: *pr}
-  - {name: 🍀 Google, <<: *pr}
-  - {name: 🤖 ChatGPT, <<: *pr}
-  - {name: 👨🏿‍💻 GitHub, <<: *pr}
-  - {name: 🐬 OneDrive, <<: *pr}
-  - {name: 🪟 Microsoft, <<: *pr}
-  - {name: 🎵 TikTok, <<: *pr}
-  - {name: 📲 Telegram, <<: *pr}
-  - {name: 🎥 NETFLIX, <<: *pr}
-  - {name: ✈️ Speedtest, <<: *pr}
-  - {name: 💶 PayPal, <<: *pr}
+  - {name: 🚀 节点选择, type: select, proxies: [♻️ 香港自动, 🇭🇰 香港节点, 🇹🇼 台湾节点, 🇯🇵 日本节点, 🇸🇬 新加坡节点, 🇺🇲 美国节点, ♻️ 自动选择, 🌐 全部节点,🟢 直连]}
+  - {name: 📹 YouTube,!!merge <<: *pr}
+  - {name: 🍀 Google,!!merge <<: *pr}
+  - {name: 🤖 ChatGPT,!!merge <<: *pr}
+  - {name: 👨🏿‍💻 GitHub,!!merge <<: *pr}
+  - {name: 🐬 OneDrive,!!merge <<: *pr}
+  - {name: 🪟 Microsoft,!!merge <<: *pr}
+  - {name: 🎵 TikTok,!!merge <<: *pr}
+  - {name: 📲 Telegram,!!merge <<: *pr}
+  - {name: 🎥 NETFLIX,!!merge <<: *pr}
+  - {name: ✈️ Speedtest,!!merge <<: *pr}
+  - {name: 💶 PayPal,!!merge <<: *pr}
   - {name: 🍎 Apple, type: select, proxies: [🟢 直连, 🚀 节点选择]}
   - {name: 🎯 全球直连, type: select, proxies: [🟢 直连, 🚀 节点选择]}
-  - {name: 🐟 漏网之鱼, <<: *pr}
+  - {name: 🐟 漏网之鱼,!!merge <<: *pr}
   - {name: 🇭🇰 香港节点, type: select, include-all: true, filter: "(?i)香港|港|hk|hongkong|hong kong"}
   - {name: 🇯🇵 日本节点, type: select, include-all: true, filter: "(?i)日本|日|jp|japan"}
   - {name: 🇺🇲 美国节点, type: select, include-all: true, filter: "(?i)美国|美|us|unitedstates|united states"}
