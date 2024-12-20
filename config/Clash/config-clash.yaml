@@ -176,7 +176,7 @@ proxy-groups:
   - name: 🇰🇷 韩国节点
     type: select
     include-all: true
-    filter: filter: "(?i)(韩国|韩|kr|korea)"
+    filter: "(?i)(韩国|韩|kr|korea)"
 
   - name: ♻️ 香港自动
     type: url-test
