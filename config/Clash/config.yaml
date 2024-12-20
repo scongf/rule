@@ -49,7 +49,7 @@ proxy-groups:
   - {name: 📹 YouTube,!!merge <<: *pr}
   - {name: 🍀 Google,!!merge <<: *pr}
   - {name: 🤖 ChatGPT,!!merge <<: *pr}
-  - {name: 👨🏿‍💻 GitHub,!!merge <<: *pr}
+  - {name: 💻 GitHub,!!merge <<: *pr}
   - {name: 🐬 Twitter,!!merge <<: *pr}
   - {name: 🪟 Microsoft,!!merge <<: *pr}
   - {name: 🎵 TikTok,!!merge <<: *pr}
@@ -75,7 +75,7 @@ rules:
   - RULE-SET,apple_domain,🍎 Apple
   - RULE-SET,proxylite,🚀 节点选择
   - RULE-SET,ai,🤖 ChatGPT
-  - RULE-SET,github_domain,👨🏿‍💻 GitHub
+  - RULE-SET,github_domain,💻 GitHub
   - RULE-SET,youtube_domain,📹 YouTube
   - RULE-SET,google_domain,🍀 Google
   - RULE-SET,twitter_domain,🐬 Twitter
