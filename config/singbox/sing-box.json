@@ -57,7 +57,7 @@
     "rules": [
       {"type": "logical", "mode": "or", "rules": [{"port": 53}, {"protocol": "dns"}], "outbound": "dns-out"},
       {"clash_mode": "direct", "outbound": "🎯 全球直连"},
-      {"clash_mode": "global", "outbound": "GLOBAL"},
+      {"clash_mode": "global", "outbound": "🌐 全部节点"},
       {"domain_suffix": ["micu.hk"], "outbound": "🎯 全球直连"},
       {"domain": ["clash.razord.top", "yacd.metacubex.one", "yacd.haishan.me", "d.metacubex.one"], "outbound": "🎯 全球直连"},
       {"ip_is_private": true, "outbound": "🎯 全球直连"},
