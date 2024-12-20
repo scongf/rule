@@ -126,10 +126,6 @@ proxy-groups:
   - name: 🎥 Netflix
     type: select
     proxies: [🚀 节点选择,🇹🇼 台湾节点,🇭🇰 香港节点,🇯🇵 日本节点,🇺🇲 美国节点,🇸🇬 狮城节点,🇰🇷 韩国节点,♻️ 自动选择,♻️ 香港自动,🌐 全部节点,🟢 直连]
-  
-  - name: ✈️ Speedtest
-    type: select
-    proxies: [🚀 节点选择,🇹🇼 台湾节点,🇭🇰 香港节点,🇯🇵 日本节点,🇺🇲 美国节点,🇸🇬 狮城节点,🇰🇷 韩国节点,♻️ 自动选择,♻️ 香港自动,🌐 全部节点,🟢 直连]
 
   - name: 💶 PayPal
     type: select
