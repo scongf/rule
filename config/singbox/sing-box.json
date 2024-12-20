@@ -61,7 +61,7 @@
       {"domain_suffix": ["micu.hk"], "outbound": "🎯 全球直连"},
       {"domain": ["clash.razord.top", "yacd.metacubex.one", "yacd.haishan.me", "d.metacubex.one"], "outbound": "🎯 全球直连"},
       {"ip_is_private": true, "outbound": "🎯 全球直连"},
-      {"rule_set": "geosite-openai", "outbound": "🤖 OpenAI"},
+      {"rule_set": "geosite-openai", "outbound": "🤖 ChatGPT"},
       {"rule_set": "geosite-youtube", "outbound": "📹 YouTube"},
       {"rule_set": ["geoip-google", "geosite-google"], "outbound": "🍀 Google"},
 	  {"rule_set": "geosite-speedtest", "outbound": "✈️ Speedtest"},
