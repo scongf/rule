@@ -20,22 +20,22 @@ config.outbounds.map(i => {
     i.outbounds.push(...getTags(proxies))
   }
   if (['🇭🇰 香港节点', '️♻️ 香港自动'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /港|hk|hongkong|kong kong|🇭🇰/i))
+    i.outbounds.push(...getTags(proxies, /港|香港|hk|hongkong|kong kong|🇭🇰/i))
   }
   if (['🇹🇼 台湾节点'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /台|tw|taiwan|🇹🇼/i))
+    i.outbounds.push(...getTags(proxies, /台|台湾|tw|taiwan|🇹🇼/i))
   }
   if (['🇯🇵 日本节点'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /日本|jp|japan|🇯🇵/i))
+    i.outbounds.push(...getTags(proxies, /日|日本|jp|japan|🇯🇵/i))
   }
   if (['🇺🇲 美国节点'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /美|us|unitedstates|united states|🇺🇲/i))
+    i.outbounds.push(...getTags(proxies, /美|美国|us|unitedstates|united states|🇺🇲/i))
   }
   if (['🇸🇬 狮城节点'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /^(?!.*(?:us)).*(新|sg|singapore|🇸🇬)/i))
+    i.outbounds.push(...getTags(proxies, /^(?!.*(?:us)).*(新|新加坡|狮城|sg|singapore|🇸🇬)/i))
   }
   if (['🇰🇷 韩国节点'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /韩|kr|KR|Korea|KOR|🇰🇷/i))
+    i.outbounds.push(...getTags(proxies, /韩|韩国|kr|KR|Korea|KOR|🇰🇷/i))
   }
 })
 
