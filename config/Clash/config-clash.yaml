@@ -246,7 +246,7 @@ rule-providers:
   telegram_domain:
     <<: *domain
     url: "https://gh.stfsub.us.kg/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/telegram.mrs"
-    apple_domain:
+  apple_domain:
     <<: *domain
     url: "https://gh.stfsub.us.kg/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/apple.mrs"
   netflix_domain:
