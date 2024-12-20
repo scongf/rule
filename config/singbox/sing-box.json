@@ -2,8 +2,8 @@
   "dns": {
   "fakeip": {"enabled": true, "inet4_range": "198.18.0.0/15", "inet6_range": "fc00::/18"},
      "servers": [
-      {"tag": "dns_direct", "address": ["223.5.5.5", "120.53.53.53"], "address_strategy": "ipv4_only", "strategy": "ipv4_only", "detour": "🎯 全球直连"},
-      {"tag": "dns_proxy", "address": ["https://dns.cloudflare.com/dns-query", "https://dns.google/dns-query"], "address_resolver": "dns_direct", "address_strategy": "ipv4_only", "strategy": "ipv4_only", "detour": "🚀 节点选择"},
+      {"tag": "dns_direct", "address": ["223.5.5.5", "120.53.53.53"], "detour": "🎯 全球直连"},
+      {"tag": "dns_proxy", "address": ["https://dns.cloudflare.com/dns-query", "https://dns.google/dns-query"], "address_resolver": "dns_direct",  "detour": "🚀 节点选择"},
       {"tag": "fakeip", "address": "fakeip"}
    ],
    "rules": 
