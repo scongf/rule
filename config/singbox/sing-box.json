@@ -1,23 +1,21 @@
 {
   "dns": {
-    "fakeip": {"enabled": true,"inet4_range": "198.18.0.0/15","inet6_range": "fc00::/18"},
-    "servers": [
-      {"tag": "google","address": "https://8.8.8.8/dns-query","detour": "🚀 节点选择"},
-      {"tag": "tx","address": "https://120.53.53.53/dns-query","detour": "🎯 全球直连"},
-      {"tag": "fakeip","address": "fakeip"}
-    ],
-    "rules": [
-      {"outbound": "any","server": "tx","disable_cache": true},
-      {"clash_mode": "Direct","server": "tx"},
-      {"clash_mode": "Global","server": "fakeip"},
-      {"query_type": [ "A", "AAAA" ],"server": "fakeip","rewrite_ttl": 1},
-      {
-        "rule_set": "geosite-cn",
-        "server": "tx"
-      }
-    ],
-    "final": "google",
-    "independent_cache": true
+  "fakeip": {"enabled": true, "inet4_range": "198.18.0.0/15", "inet6_range": "fc00::/18"},
+     "servers": [
+      {"tag": "dns_direct", "address": ["223.5.5.5", "120.53.53.53"], "address_strategy": "ipv4_only", "strategy": "ipv4_only", "detour": "🎯 全球直连"},
+      {"tag": "dns_proxy", "address": ["https://dns.cloudflare.com/dns-query", "https://dns.google/dns-query"], "address_resolver": "dns_direct", "address_strategy": "ipv4_only", "strategy": "ipv4_only", "detour": "🚀 节点选择"},
+      {"tag": "fakeip", "address": "fakeip"}
+   ],
+   "rules": 
+   [
+     {"outbound": "any", "server": "dns_direct", "disable_cache": true},
+     {"clash_mode": "direct", "server": "dns_direct","disable_cache": true},
+     {"clash_mode": "global", "server": "dns_proxy", "disable_cache": true},
+     {"rule_set": "geosite-cn", "action": "route","server": "dns_direct"},
+     {"query_type": ["A","AAAA"],"server": "fakeip","rewrite_ttl": 1},
+   ],
+   "final": "dns_proxy",
+   "independent_cache": true
   },
   "route": {
     "auto_detect_interface": true,
