@@ -20,7 +20,7 @@ config.outbounds.map(i => {
     i.outbounds.push(...getTags(proxies))
   }
   if (['🇭🇰 香港节点', '️♻️ 香港自动'].includes(i.tag)) {
-    i.outbounds.push(...getTags(proxies, /港|香港|hk|hongkong|kong kong|🇭🇰/i))
+    i.outbounds.push(...getTags(proxies, /港|香港|hk|hongkong|🇭🇰/i))
   }
   if (['🇹🇼 台湾节点'].includes(i.tag)) {
     i.outbounds.push(...getTags(proxies, /台|台湾|tw|taiwan|🇹🇼/i))
