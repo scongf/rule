@@ -8,15 +8,6 @@ proxy-providers:
       interval: 300
     proxy: 🟢 直连
     url: "https://sub.fusir.top:6767/fusir/download/Mitce?target=ClashMeta"
- Airport_02:
-   type: http
-   interval: 1800
-   health-check:
-   enable: true
-   url: https://www.gstatic.com/generate_204
-   interval: 300
-   proxy: 🟢 直连
-   url: "https://sub.fusir.top:6767/fusir/download/SSONE?target=Clash"
 
 unified-delay: true
 tcp-concurrent: true
@@ -51,10 +42,11 @@ proxy-groups:
   - {name: 🤖 ChatGPT,!!merge <<: *pr}
   - {name: 💻 GitHub,!!merge <<: *pr}
   - {name: 🐬 Twitter,!!merge <<: *pr}
-  - {name: 🪟 Microsoft,!!merge <<: *pr}
+  - {name: 🪟 Microsoft, type: select, proxies: [🌐 全部节点,🟢 直连]}
   - {name: 🎵 TikTok,!!merge <<: *pr}
   - {name: 📲 Telegram,!!merge <<: *pr}
   - {name: 🎥 Netflix,!!merge <<: *pr}
+  - {name: 📷 Instagram,!!merge <<: *pr}
   - {name: 💶 PayPal,!!merge <<: *pr}
   - {name: 🍎 Apple, type: select, proxies: [🟢 直连, 🚀 节点选择]}
   - {name: 🎯 全球直连, type: select, proxies: [🟢 直连, 🚀 节点选择]}
@@ -66,7 +58,7 @@ proxy-groups:
   - {name: 🇸🇬 狮城节点, type: select, include-all: true, filter: "(?i)新加坡|新|狮城|SG|sg|SINGAPORE|Singapore"}
   - {name: 🇰🇷 韩国节点, type: select, include-all: true, filter: "(?i)韩国|韩|kr|KR|Korea|KOR"}  
   - {name: ♻️ 香港自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(港|HK|(?i)Hong))^((?!(台|日|韩|新|深|美)).)*$"}
-  - {name: ♻️ 自动选择, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "^((?!(直连)).)*$"}
+  - {name: ♻️ 自动选择, type: url-test, include-all-providers: true, tolerance: 20, interval: 300}
   - {name: 🌐 全部节点, type: select, include-all: true}
 rules:
   - RULE-SET,private_domain,🟢 直连
@@ -81,6 +73,7 @@ rules:
   - RULE-SET,x_domain,🐬 Twitter,no-resolve
   - RULE-SET,microsoft_domain,🪟 Microsoft
   - RULE-SET,tiktok_domain,🎵 TikTok
+  - RULE-SET,instagram_domain,📷 Instagram
   - RULE-SET,telegram_domain,📲 Telegram
   - RULE-SET,netflix_domain,🎥 Netflix
   - RULE-SET,paypal_domain,💶 PayPal
@@ -98,8 +91,8 @@ rule-anchor:
   class: &class {type: http, interval: 86400, behavior: classical, format: text}
 rule-providers: 
   private_domain: { <<: *domain, url: "https://gh.stfsub.us.kg/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.mrs" }
-  direct1: { <<: *class, url: "https://gh.stfsub.us.kg/https://raw.githubusercontent.com/qichiyuhub/rule/master/Direct.list" }
-  proxylite: { <<: *class, url: "https://gh.stfsub.us.kg/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/OpenAi.list" }
+  direct1: { <<: *class, url: "https://gh.stfsub.us.kg/https://raw.githubusercontent.com/scongf/rule/refs/heads/master/Direct.list" }
+  proxylite: { <<: *class, url: "https://gh.stfsub.us.kghttps://raw.githubusercontent.com/scongf/rule/refs/heads/master/ProxyLite.list" }
   ai: { <<: *class, url: "https://gh.stfsub.us.kg/https://raw.githubusercontent.com/qichiyuhub/rule/master/AI.list" }
   youtube_domain: { <<: *domain, url: "https://gh.stfsub.us.kg/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/youtube.mrs" }
   google_domain: { <<: *domain, url: "https://gh.stfsub.us.kg/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google.mrs" }
@@ -111,6 +104,7 @@ rule-providers:
   x_domain: { <<: *domain, url: "https://gh.stfsub.us.kg/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/x.mrs" }
   microsoft_domain: { <<: *domain, url: "https://gh.stfsub.us.kg/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/microsoft.mrs" }
   apple_domain: { <<: *domain, url: "https://gh.stfsub.us.kg/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/apple-cn.mrs" }
+  instagram_domain: { <<: *domain, url: "https://gh.stfsub.us.kg/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/instagram.mrs" }
   tiktok_domain: { <<: *domain, url: "https://gh.stfsub.us.kg/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/tiktok.mrs" }
   gfw_domain: { <<: *domain, url: "https://gh.stfsub.us.kg/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/gfw.mrs" }
   geolocation-!cn: { <<: *domain, url: "https://gh.stfsub.us.kg/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.mrs" }
