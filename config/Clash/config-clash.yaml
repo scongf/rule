@@ -192,6 +192,7 @@ rules:
   - RULE-SET,apple_domain,🍎 Apple
   - RULE-SET,github_domain,💻 GitHub
   - RULE-SET,twitter_domain,🐬 Twitter
+  - RULE-SET,x_domain,🐬 Twitter
   - RULE-SET,youtube_domain,📹 YouTube
   - RULE-SET,google_domain,🍀 Google
   - RULE-SET,telegram_domain,📲 Telegram
@@ -231,6 +232,9 @@ rule-providers:
   twitter_domain:
     <<: *domain
     url: "https://gh.stfsub.us.kg/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/twitter.mrs"
+  x_domain:
+    <<: *domain
+    url: "https://gh.stfsub.us.kg/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/x.mrs"
   youtube_domain:
     <<: *domain
     url: "https://gh.stfsub.us.kg/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/youtube.mrs"
