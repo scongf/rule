@@ -32,7 +32,7 @@
       {"rule_set": "geosite-openai", "outbound": "🤖 ChatGPT"},
       {"rule_set": "geosite-youtube", "outbound": "📹 YouTube"},
       {"rule_set": ["geoip-google", "geosite-google"], "outbound": "🍀 Google"},
-      {"rule_set": [""geosite-twitter"", ""geosite-x""], "outbound": "🐬 Twitter"},
+      {"rule_set": ["geosite-twitter", "geosite-x"], "outbound": "🐬 Twitter"},
       {"rule_set": "geosite-paypal", "outbound": "💶 PayPal"},
       {"rule_set": ["geoip-telegram", "geosite-telegram"], "outbound": "📲 Telegram"},
       {"rule_set": "geosite-tiktok", "outbound": "🎵 TikTok"},
