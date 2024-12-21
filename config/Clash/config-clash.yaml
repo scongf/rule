@@ -83,6 +83,8 @@ dns:
       - "https://dns.cloudflare.com/dns-query"
       - "https://dns.google/dns-query"
 
+pr: &pr {type: select, proxies: [🚀 节点选择,🇹🇼 台湾节点,🇭🇰 香港节点,🇯🇵 日本节点,🇺🇲 美国节点,🇸🇬 狮城节点,🇰🇷 韩国节点,♻️ 自动选择,♻️ 香港自动,🌐 全部节点,🟢 直连]}
+
 proxy-groups:
 
   - name: 🚀 节点选择
@@ -111,7 +113,7 @@ proxy-groups:
 
   - name: 🪟 Microsoft
     type: select
-    proxies: [🚀 节点选择,🇹🇼 台湾节点,🇭🇰 香港节点,🇯🇵 日本节点,🇺🇲 美国节点,🇸🇬 狮城节点,🇰🇷 韩国节点,♻️ 自动选择,♻️ 香港自动,🌐 全部节点,🟢 直连]
+    proxies: [🌐 全部节点,🟢 直连]
 
   - name: 🎵 TikTok
     type: select
@@ -122,6 +124,10 @@ proxy-groups:
     proxies: [🚀 节点选择,🇹🇼 台湾节点,🇭🇰 香港节点,🇯🇵 日本节点,🇺🇲 美国节点,🇸🇬 狮城节点,🇰🇷 韩国节点,♻️ 自动选择,♻️ 香港自动,🌐 全部节点,🟢 直连]
 
   - name: 🎥 Netflix
+    type: select
+    proxies: [🚀 节点选择,🇹🇼 台湾节点,🇭🇰 香港节点,🇯🇵 日本节点,🇺🇲 美国节点,🇸🇬 狮城节点,🇰🇷 韩国节点,♻️ 自动选择,♻️ 香港自动,🌐 全部节点,🟢 直连]
+  
+  - name: 📷 Instagram
     type: select
     proxies: [🚀 节点选择,🇹🇼 台湾节点,🇭🇰 香港节点,🇯🇵 日本节点,🇺🇲 美国节点,🇸🇬 狮城节点,🇰🇷 韩国节点,♻️ 自动选择,♻️ 香港自动,🌐 全部节点,🟢 直连]
 
@@ -180,7 +186,7 @@ proxy-groups:
   
   - name: ♻️ 自动选择
     type: url-test
-    include-all: true
+    include-all-providers: true
     tolerance: 10
 
   - name: 🌐 全部节点
@@ -189,6 +195,7 @@ proxy-groups:
 
 rules:
   - RULE-SET,private_ip,🟢 直连,no-resolve
+  - RULE-SET,private_domain,🟢 直连
   - RULE-SET,apple_domain,🍎 Apple
   - RULE-SET,github_domain,💻 GitHub
   - RULE-SET,twitter_domain,🐬 Twitter
@@ -196,6 +203,7 @@ rules:
   - RULE-SET,youtube_domain,📹 YouTube
   - RULE-SET,google_domain,🍀 Google
   - RULE-SET,telegram_domain,📲 Telegram
+  - RULE-SET,instagram_domain,📷 Instagram
   - RULE-SET,netflix_domain,🎥 Netflix
   - RULE-SET,openai_domain,🤖 ChatGPT
   - RULE-SET,tiktok_domain,🎵 TikTok
@@ -220,6 +228,9 @@ rule-providers:
   cn_domain:
     <<: *domain
     url: "https://gh.stfsub.us.kg/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.mrs"
+  apple_domain: 
+    <<: *domain
+    url: "https://gh.stfsub.us.kg/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/apple-cn.mrs"
   biliintl_domain:
     <<: *domain
     url: "https://gh.stfsub.us.kg/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/biliintl.mrs"
@@ -238,15 +249,15 @@ rule-providers:
   youtube_domain:
     <<: *domain
     url: "https://gh.stfsub.us.kg/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/youtube.mrs"
+  instagram_domain:
+    <<: *domain
+    url: "https://gh.stfsub.us.kg/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/instagram.mrs"
   google_domain:
     <<: *domain
     url: "https://gh.stfsub.us.kg/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google.mrs"
   telegram_domain:
     <<: *domain
     url: "https://gh.stfsub.us.kg/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/telegram.mrs"
-  apple_domain:
-    <<: *domain
-    url: "https://gh.stfsub.us.kg/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/apple-cn.mrs"
   netflix_domain:
     <<: *domain
     url: "https://gh.stfsub.us.kg/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/netflix.mrs"
