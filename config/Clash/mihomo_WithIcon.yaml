@@ -198,7 +198,7 @@ proxy-groups:
       - 全部节点
       - DIRECT
   - name: 台湾节点
-    icon: https://gh.stfsub.us.kg/https://github.com/scongf/rule/raw/refs/heads/master/config/Clash/Taiwan.png
+    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Taiwan.png
     include-all: true
     filter: (?i)台|新北|彰化|TW|Taiwan
     type: select
