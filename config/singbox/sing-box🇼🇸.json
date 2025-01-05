@@ -20,7 +20,8 @@
     "independent_cache": true
   },
   "route": {
-
+    "auto_detect_interface": true,
+    "final": "🐟 漏网之鱼",
     "rules": [
       {"port": 53,"outbound": "dns-out"},
       {"clash_mode": "Direct", "outbound": "🎯 全球直连"},
@@ -65,8 +66,8 @@
       {"tag": "geoip-cn", "type": "remote", "format": "binary", "url": "https://gh.stfsub.us.kg/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/cn.srs", "download_detour": "🎯 全球直连"},
       {"tag": "geosite-cn", "type": "remote", "format": "binary", "url": "https://gh.stfsub.us.kg/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/cn.srs", "download_detour": "🎯 全球直连"}
     ],
-    "auto_detect_interface": true,
-    "final": "🐟 漏网之鱼"
+    "geosite": {"path": "./geosite.db", "download_url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.db"},
+    "geoip": {"path": "./geoip.db", "download_url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.db"}
 },
   "outbounds": [
   {"tag": "🚀 节点选择","type": "selector","outbounds": ["🇼🇸 台湾节点","🇭🇰 香港节点","🇯🇵 日本节点","🇺🇲 美国节点","🇸🇬 狮城节点","🇰🇷 韩国节点","♻️ 自动选择","♻️ 香港自动","🌐 全部节点","🎯 全球直连"],"default": "♻️ 自动选择"},
