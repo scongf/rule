@@ -20,7 +20,7 @@ unified-delay: false
 tcp-concurrent: true
 external-controller: 127.0.0.1:9090
 external-ui: ui
-external-ui-url: "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip"
+external-ui-url: "https://gh.stfsub.us.kg/https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip"
 
 find-process-mode: strict
 global-client-fingerprint: chrome
@@ -195,7 +195,6 @@ proxy-groups:
 
 rules:
   - RULE-SET,private_ip,🟢 直连,no-resolve
-  - RULE-SET,private_domain,🟢 直连
   - RULE-SET,apple_domain,🍎 Apple
   - RULE-SET,github_domain,💻 GitHub
   - RULE-SET,twitter_domain,🐬 Twitter
