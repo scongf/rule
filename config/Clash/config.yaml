@@ -93,7 +93,7 @@ rule-providers:
   private_domain: { <<: *domain, url: "https://gh.stfsub.us.kg/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.mrs" }
   direct1: { <<: *class, url: "https://gh.stfsub.us.kg/https://raw.githubusercontent.com/scongf/rule/refs/heads/master/Direct.list" }
   proxylite: { <<: *class, url: "https://gh.stfsub.us.kghttps://raw.githubusercontent.com/scongf/rule/refs/heads/master/ProxyLite.list" }
-  ai: { <<: *class, url: "https://gh.stfsub.us.kg/https://raw.githubusercontent.com/qichiyuhub/rule/master/AI.list" }
+  ai: { <<: *class, url: "https://gh.stfsub.us.kg/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/openai.mrs" }
   youtube_domain: { <<: *domain, url: "https://gh.stfsub.us.kg/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/youtube.mrs" }
   google_domain: { <<: *domain, url: "https://gh.stfsub.us.kg/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google.mrs" }
   github_domain: { <<: *domain, url: "https://gh.stfsub.us.kg/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/github.mrs" }
