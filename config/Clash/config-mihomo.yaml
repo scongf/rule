@@ -425,7 +425,7 @@ rules:
   - "RULE-SET,Apple,🍎 Apple"
   - "RULE-SET,Telegram,📲 Telegram"
   - "RULE-SET,Twitter,🐬 Twitter"
-  - "RULE-SET,OpenAi,🤖 ChatGPT"
+  - "RULE-SET,ChatGPT,🤖 ChatGPT"
   - "RULE-SET,TikTok,🎵 TikTok"
   - "RULE-SET,Instagram,📷 Instagram"
   - "RULE-SET,PayPal,💶 PayPal"
