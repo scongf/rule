@@ -429,7 +429,7 @@ rules:
   - "RULE-SET,TikTok,🎵 TikTok"
   - "RULE-SET,Instagram,📷 Instagram"
   - "RULE-SET,PayPal,💶 PayPal"
-  - "RULE-SET,Steam,♻️ 香港选择"
+  - "RULE-SET,Steam,♻️ 香港自动"
   - "RULE-SET,YouTube,📹 YouTube"
   - "RULE-SET,Netflix,🎥 Netflix"
   - "RULE-SET,ProxyMedia,🚀 节点选择"
