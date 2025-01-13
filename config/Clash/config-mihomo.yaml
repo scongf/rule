@@ -9,7 +9,7 @@ proxy-groups:
       - 🇸🇬 狮城节点
       - 🇰🇷 韩国节点
       - ♻️ 自动选择
-      - ♻️ 香港选择
+      - ♻️ 香港自动
       - 🌐 全部节点
       - DIRECT
   - name: 📹 YouTube
@@ -23,7 +23,7 @@ proxy-groups:
       - 🇸🇬 狮城节点
       - 🇰🇷 韩国节点
       - ♻️ 自动选择
-      - ♻️ 香港选择
+      - ♻️ 香港自动
       - 🌐 全部节点
       - DIRECT 
   - name: 🍀 Google
@@ -37,7 +37,7 @@ proxy-groups:
       - 🇸🇬 狮城节点
       - 🇰🇷 韩国节点
       - ♻️ 自动选择
-      - ♻️ 香港选择
+      - ♻️ 香港自动
       - 🌐 全部节点
       - DIRECT
   - name: 🤖 ChatGPT
@@ -51,7 +51,7 @@ proxy-groups:
       - 🇸🇬 狮城节点
       - 🇰🇷 韩国节点
       - ♻️ 自动选择
-      - ♻️ 香港选择
+      - ♻️ 香港自动
       - 🌐 全部节点
       - DIRECT
   - name: 💻 GitHub
@@ -65,7 +65,7 @@ proxy-groups:
       - 🇸🇬 狮城节点
       - 🇰🇷 韩国节点
       - ♻️ 自动选择
-      - ♻️ 香港选择
+      - ♻️ 香港自动
       - 🌐 全部节点
       - DIRECT
   - name: 🐬 Twitter
@@ -79,7 +79,7 @@ proxy-groups:
       - 🇸🇬 狮城节点
       - 🇰🇷 韩国节点
       - ♻️ 自动选择
-      - ♻️ 香港选择
+      - ♻️ 香港自动
       - 🌐 全部节点
       - DIRECT
   - name: 🪟 Microsoft
@@ -98,7 +98,7 @@ proxy-groups:
       - 🇸🇬 狮城节点
       - 🇰🇷 韩国节点
       - ♻️ 自动选择
-      - ♻️ 香港选择
+      - ♻️ 香港自动
       - 🌐 全部节点
       - DIRECT
   - name: 📲 Telegram
@@ -112,7 +112,7 @@ proxy-groups:
       - 🇸🇬 狮城节点
       - 🇰🇷 韩国节点
       - ♻️ 自动选择
-      - ♻️ 香港选择
+      - ♻️ 香港自动
       - 🌐 全部节点
       - DIRECT
   - name: 🎥 Netflix
@@ -126,7 +126,7 @@ proxy-groups:
       - 🇸🇬 狮城节点
       - 🇰🇷 韩国节点
       - ♻️ 自动选择
-      - ♻️ 香港选择
+      - ♻️ 香港自动
       - 🌐 全部节点
       - DIRECT
   - name: 📷 Instagram
@@ -140,7 +140,7 @@ proxy-groups:
       - 🇸🇬 狮城节点
       - 🇰🇷 韩国节点
       - ♻️ 自动选择
-      - ♻️ 香港选择
+      - ♻️ 香港自动
       - 🌐 全部节点
       - DIRECT
   - name: 💶 PayPal
@@ -154,14 +154,14 @@ proxy-groups:
       - 🇸🇬 狮城节点
       - 🇰🇷 韩国节点
       - ♻️ 自动选择
-      - ♻️ 香港选择
+      - ♻️ 香港自动
       - 🌐 全部节点
       - DIRECT
   - name: 🍎 Apple
     type: select
     proxies:
       - DIRECT
-      - ♻️ 香港选择
+      - ♻️ 香港自动
       - 🌐 全部节点
   - name: 🎯 全球直连
     type: select
@@ -179,7 +179,7 @@ proxy-groups:
       - 🇸🇬 狮城节点
       - 🇰🇷 韩国节点
       - ♻️ 自动选择
-      - ♻️ 香港选择
+      - ♻️ 香港自动
       - 🌐 全部节点
       - DIRECT
 
