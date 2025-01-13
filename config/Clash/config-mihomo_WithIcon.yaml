@@ -297,7 +297,7 @@ rule-providers:
     type: http
   GitHub:
     url: https://gh.stfsub.us.kg/https://github.com/ACL4SSR/ACL4SSR/raw/refs/heads/master/Clash/Ruleset/Github.list
-    path: ./ruleset/OneDrive.list
+    path: ./ruleset/Github.list
     behavior: classical
     interval: 86400
     format: text
