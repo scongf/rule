@@ -1,0 +1,444 @@
+proxy-groups:
+  - name: 🚀 节点选择
+    type: select
+    proxies:
+      - 🇹🇼 台湾节点
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - ♻️ 自动选择
+      - ♻️ 香港选择
+      - 🌐 全部节点
+      - DIRECT
+  - name: 📹 YouTube
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🇹🇼 台湾节点
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - ♻️ 自动选择
+      - ♻️ 香港选择
+      - 🌐 全部节点
+      - DIRECT 
+  - name: 🍀 Google
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🇹🇼 台湾节点
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - ♻️ 自动选择
+      - ♻️ 香港选择
+      - 🌐 全部节点
+      - DIRECT
+  - name: 🤖 ChatGPT
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🇹🇼 台湾节点
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - ♻️ 自动选择
+      - ♻️ 香港选择
+      - 🌐 全部节点
+      - DIRECT
+  - name: 💻 GitHub
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🇹🇼 台湾节点
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - ♻️ 自动选择
+      - ♻️ 香港选择
+      - 🌐 全部节点
+      - DIRECT
+  - name: 🐬 Twitter
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🇹🇼 台湾节点
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - ♻️ 自动选择
+      - ♻️ 香港选择
+      - 🌐 全部节点
+      - DIRECT
+  - name: 🪟 Microsoft
+    type: select
+    proxies:
+      - DIRECT
+      - 🌐 全部节点
+  - name: 🎵 TikTok
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🇹🇼 台湾节点
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - ♻️ 自动选择
+      - ♻️ 香港选择
+      - 🌐 全部节点
+      - DIRECT
+  - name: 📲 Telegram
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🇹🇼 台湾节点
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - ♻️ 自动选择
+      - ♻️ 香港选择
+      - 🌐 全部节点
+      - DIRECT
+  - name: 🎥 Netflix
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🇹🇼 台湾节点
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - ♻️ 自动选择
+      - ♻️ 香港选择
+      - 🌐 全部节点
+      - DIRECT
+  - name: 📷 Instagram
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🇹🇼 台湾节点
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - ♻️ 自动选择
+      - ♻️ 香港选择
+      - 🌐 全部节点
+      - DIRECT
+  - name: 💶 PayPal
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🇹🇼 台湾节点
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - ♻️ 自动选择
+      - ♻️ 香港选择
+      - 🌐 全部节点
+      - DIRECT
+  - name: 🍎 Apple
+    type: select
+    proxies:
+      - DIRECT
+      - ♻️ 香港选择
+      - 🌐 全部节点
+  - name: 🎯 全球直连
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+  - name: 🐟 漏网之鱼
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🇹🇼 台湾节点
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - ♻️ 自动选择
+      - ♻️ 香港选择
+      - 🌐 全部节点
+      - DIRECT
+
+
+  - name: 🇹🇼 台湾节点
+    include-all: true
+    filter: (?i)台|新北|彰化|TW|Taiwan
+    type: select
+  - name: 🇭🇰 香港节点
+    include-all: true
+    filter: (?i)港|HK|hk|Hong Kong|HongKong|hongkong
+    type: select
+  - name: 🇯🇵 日本节点
+    include-all: true
+    filter: (?i)日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan
+    type: select
+  - name: 🇺🇲 美国节点
+    include-all: true
+    filter: (?i)美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States
+    type: select
+  - name: 🇸🇬 狮城节点
+    include-all: true
+    filter: (?i)新加坡|坡|狮城|SG|Singapore
+    type: select
+  - name: 🇰🇷 韩国节点
+    include-all: true
+    filter: (?i)KR|Korea|KOR|首尔|韩|韓
+    type: select
+  - name: ♻️ 香港自动
+    include-all: true
+    filter: (?i)港|HK|hk|Hong Kong|HongKong|hongkong
+    type: url-test
+    interval: 300
+    tolerance: 50
+  - name: ♻️ 自动选择
+    type: url-test
+    include-all: true
+    interval: 300
+    tolerance: 50
+  - name: 🌐 全部节点
+    include-all: true
+    type: select
+
+rule-providers:
+  LocalAreaNetwork:
+    url: https://gh.stfsub.us.kg/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
+    path: ./ruleset/LocalAreaNetwork.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  UnBan:
+    url: https://gh.stfsub.us.kg/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list
+    path: ./ruleset/UnBan.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  BanAD:
+    url: https://gh.stfsub.us.kg/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
+    path: ./ruleset/BanAD.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  BanProgramAD:
+    url: https://gh.stfsub.us.kg/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
+    path: ./ruleset/BanProgramAD.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Google:
+    url: https://gh.stfsub.us.kg/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Google.list
+    path: ./ruleset/Google.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  GoogleCN:
+    url: https://gh.stfsub.us.kg/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list
+    path: ./ruleset/GoogleCN.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  SteamCN:
+    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/SteamCN.list
+    path: ./ruleset/SteamCN.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  GitHub:
+    url: https://gh.stfsub.us.kg/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GitHub.list
+    path: ./ruleset/GitHub.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Microsoft:
+    url: https://gh.stfsub.us.kg/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Microsoft.list
+    path: ./ruleset/Microsoft.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Apple:
+    url: https://gh.stfsub.us.kg/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Apple.list
+    path: ./ruleset/Apple.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Telegram:
+    url: https://gh.stfsub.us.kg/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Telegram.list
+    path: ./ruleset/Telegram.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  ChatGPT:
+    url: https://gh.stfsub.us.kg/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/OpenAi.list
+    path: ./ruleset/OpenAi.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Twitter:
+    url: https://gh.stfsub.us.kg/https://github.com/ACL4SSR/ACL4SSR/raw/refs/heads/master/Clash/Ruleset/Twitter.list
+    path: ./ruleset/Twitter.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  TikTok:
+    url: https://gh.stfsub.us.kg/https://github.com/ACL4SSR/ACL4SSR/raw/refs/heads/master/Clash/Ruleset/TikTok.list
+    path: ./ruleset/TikTok.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Instagram:
+    url: https://gh.stfsub.us.kg/https://github.com/ACL4SSR/ACL4SSR/raw/refs/heads/master/Clash/Ruleset/Instagram.list
+    path: ./ruleset/Instagram.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  PayPal:
+    url: https://gh.stfsub.us.kg/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/paypal.list
+    path: ./ruleset/PayPal.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Steam:
+    url: https://gh.stfsub.us.kg/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Steam.list
+    path: ./ruleset/Steam.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  YouTube:
+    url: https://gh.stfsub.us.kg/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTube.list
+    path: ./ruleset/YouTube.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Netflix:
+    url: https://gh.stfsub.us.kg/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Netflix.list
+    path: ./ruleset/Netflix.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  BilibiliHMT:
+    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/BilibiliHMT.list
+    path: ./ruleset/BilibiliHMT.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Bilibili:
+    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bilibili.list
+    path: ./ruleset/Bilibili.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  ChinaMedia:
+    url: https://gh.stfsub.us.kg/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaMedia.list
+    path: ./ruleset/ChinaMedia.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  ProxyMedia:
+    url: https://gh.stfsub.us.kg/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list
+    path: ./ruleset/ProxyMedia.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  ProxyGFWlist:
+    url: https://gh.stfsub.us.kg/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list
+    path: ./ruleset/ProxyGFWlist.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  ChinaDomain:
+    url: https://gh.stfsub.us.kg/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
+    path: ./ruleset/ChinaDomain.list
+    behavior: domain
+    interval: 86400
+    format: text
+    type: http
+  ChinaCompanyIp:
+    url: https://gh.stfsub.us.kg/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
+    path: ./ruleset/ChinaCompanyIp.list
+    behavior: ipcidr
+    interval: 86400
+    format: text
+    type: http
+  Download:
+    url: https://gh.stfsub.us.kg/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list
+    path: ./ruleset/Download.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+
+rules:
+  - "RULE-SET,LocalAreaNetwork,🎯 全球直连"
+  - "RULE-SET,UnBan,🎯 全球直连"
+  - "RULE-SET,Google,🍀 Google"
+  - "RULE-SET,GoogleCN,🎯 全球直连"
+  - "RULE-SET,SteamCN,🎯 全球直连"
+  - "RULE-SET,GitHub,💻 GitHub"
+  - "RULE-SET,Microsoft,🪟 Microsoft"
+  - "RULE-SET,Apple,🍎 Apple"
+  - "RULE-SET,Telegram,📲 Telegram"
+  - "RULE-SET,Twitter,🐬 Twitter"
+  - "RULE-SET,OpenAi,🤖 ChatGPT"
+  - "RULE-SET,TikTok,🎵 TikTok"
+  - "RULE-SET,Instagram,📷 Instagram"
+  - "RULE-SET,PayPal,💶 PayPal"
+  - "RULE-SET,Steam,♻️ 香港选择"
+  - "RULE-SET,YouTube,📹 YouTube"
+  - "RULE-SET,Netflix,🎥 Netflix"
+  - "RULE-SET,ProxyMedia,🚀 节点选择"
+  - "RULE-SET,ProxyGFWlist,🚀 节点选择"
+  - "RULE-SET,BilibiliHMT,🎯 全球直连"
+  - "RULE-SET,Bilibili,🎯 全球直连"
+  - "RULE-SET,ChinaMedia,🎯 全球直连"
+  - "RULE-SET,ChinaDomain,🎯 全球直连"
+  - "RULE-SET,ChinaCompanyIp,🎯 全球直连"
+  - "RULE-SET,Download,🎯 全球直连"
+  - "GEOIP,CN,🎯 全球直连"
+  - "MATCH,🐟 漏网之鱼"
