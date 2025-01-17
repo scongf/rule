@@ -48,7 +48,10 @@ sniffer:
     - "*.fusir.top"
     - "*.fusir.eu.org"
     - "*.fusir.us.kg"
-
+    - "ddns.oray.com/checkip"
+    - "ip.3322.net"
+    - "4.ipw.cn"
+    - "myip4.ipip.net"
 tun:
   enable: true
   stack: mixed
