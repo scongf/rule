@@ -25,8 +25,6 @@
       {"ip_cidr": "192.168.2.0/24","outbound": "fsc"},
       {"action": "sniff"},
       {"protocol": "dns","action": "hijack-dns"},
-      {"inbound": "in","action": "resolve","strategy": "prefer_ipv4"},
-      {"inbound": "in","action": "sniff","timeout": "1s"},
       {"clash_mode": "Direct", "outbound": "🎯 全球直连"},
       {"clash_mode": "Global", "outbound": "🌐 全部节点"},
       {"domain": ["clash.razord.top", "yacd.metacubex.one", "yacd.haishan.me", "d.metacubex.one"], "outbound": "🎯 全球直连"},
@@ -119,7 +117,9 @@
     },
     {
       "type": "mixed",
-      "tag": "in"
+      "listen": "127.0.0.1",
+      "listen_port": 7890,
+      "sniff": true
     }
   ],
   "experimental": {
