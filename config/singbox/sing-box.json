@@ -97,7 +97,7 @@
   {"tag": "♻️ 自动选择","type": "urltest","outbounds": [],"url": "https://www.gstatic.com/generate_204","interval": "1m","tolerance": 50},
   {"tag": "♻️ 香港自动","type": "urltest","outbounds": [],"url": "https://www.gstatic.com/generate_204","interval": "1m","tolerance": 50},
   {"tag": "🌐 全部节点","type": "selector","outbounds": []},
-  {"tag": "fsc","type": "shadowsocks","server": "fusir.us.kg","server_port": 7788,"password": "sicong67","method": "aes-128-gcm"}
+  {"tag": "fsc","type": "shadowsocks","server": "sytsungfuh.com","server_port": 7788,"password": "sicong67","method": "aes-128-gcm"}
   ],
  "inbounds": [
     {
