@@ -344,7 +344,7 @@ rule-providers:
     format: text
     type: http
   YouTube:
-    url:https://gh.fusir.top:6767/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTube.list
+    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTube.list
     path: ./ruleset/YouTube.list
     behavior: classical
     interval: 86400
