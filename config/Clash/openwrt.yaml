@@ -1,0 +1,235 @@
+
+
+proxy-groups:
+  - name: 🌐 全部节点
+    include-all: true
+    type: select
+  - name: ♻️ 自动选择
+    type: url-test
+    include-all: true
+    interval: 300
+    tolerance: 50
+
+rule-providers:
+  LocalAreaNetwork:
+    url: https://proxy.pipers.cn/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
+    path: ./ruleset/LocalAreaNetwork.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  UnBan:
+    url: https://proxy.pipers.cn/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list
+    path: ./ruleset/UnBan.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  BanAD:
+    url: https://proxy.pipers.cn/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
+    path: ./ruleset/BanAD.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  BanProgramAD:
+    url: https://proxy.pipers.cn/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
+    path: ./ruleset/BanProgramAD.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Google:
+    url: https://proxy.pipers.cn/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Google.list
+    path: ./ruleset/Google.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  GoogleCN:
+    url: https://proxy.pipers.cn/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list
+    path: ./ruleset/GoogleCN.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  SteamCN:
+    url: https://proxy.pipers.cn/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/SteamCN.list
+    path: ./ruleset/SteamCN.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  GitHub:
+    url: https://proxy.pipers.cn/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GitHub.list
+    path: ./ruleset/GitHub.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Microsoft:
+    url: https://proxy.pipers.cn//https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Microsoft.list
+    path: ./ruleset/Microsoft.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Apple:
+    url: https://proxy.pipers.cn/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Apple.list
+    path: ./ruleset/Apple.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Telegram:
+    url: https://proxy.pipers.cn/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Telegram.list
+    path: ./ruleset/Telegram.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  ChatGPT:
+    url: https://proxy.pipers.cn/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/OpenAi.list
+    path: ./ruleset/OpenAi.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Twitter:
+    url: https://proxy.pipers.cn/https://github.com/ACL4SSR/ACL4SSR/raw/refs/heads/master/Clash/Ruleset/Twitter.list
+    path: ./ruleset/Twitter.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  TikTok:
+    url: https://proxy.pipers.cn/https://github.com/ACL4SSR/ACL4SSR/raw/refs/heads/master/Clash/Ruleset/TikTok.list
+    path: ./ruleset/TikTok.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Instagram:
+    url: https://proxy.pipers.cn/https://github.com/ACL4SSR/ACL4SSR/raw/refs/heads/master/Clash/Ruleset/Instagram.list
+    path: ./ruleset/Instagram.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  PayPal:
+    url: https://proxy.pipers.cn/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/paypal.list
+    path: ./ruleset/PayPal.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Steam:
+    url: https://proxy.pipers.cn/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Steam.list
+    path: ./ruleset/Steam.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  YouTube:
+    url: https://proxy.pipers.cn/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTube.list
+    path: ./ruleset/YouTube.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Netflix:
+    url: https://proxy.pipers.cn/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Netflix.list
+    path: ./ruleset/Netflix.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  BilibiliHMT:
+    url: https://proxy.pipers.cn/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/BilibiliHMT.list
+    path: ./ruleset/BilibiliHMT.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Bilibili:
+    url: https://proxy.pipers.cn/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bilibili.list
+    path: ./ruleset/Bilibili.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  ChinaMedia:
+    url: https://proxy.pipers.cn/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaMedia.list
+    path: ./ruleset/ChinaMedia.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  ProxyMedia:
+    url: https://proxy.pipers.cn/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list
+    path: ./ruleset/ProxyMedia.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  ProxyGFWlist:
+    url: https://proxy.pipers.cn/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list
+    path: ./ruleset/ProxyGFWlist.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  ChinaDomain:
+    url: https://proxy.pipers.cn/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
+    path: ./ruleset/ChinaDomain.list
+    behavior: domain
+    interval: 86400
+    format: text
+    type: http
+  ChinaCompanyIp:
+    url: https://proxy.pipers.cn/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
+    path: ./ruleset/ChinaCompanyIp.list
+    behavior: ipcidr
+    interval: 86400
+    format: text
+    type: http
+  Download:
+    url: https://proxy.pipers.cn/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list
+    path: ./ruleset/Download.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+
+rules:
+  - "RULE-SET,LocalAreaNetwork,DIRECT"
+  - "RULE-SET,UnBan,DIRECT"
+  - "RULE-SET,Google,🌐 全部节点"
+  - "RULE-SET,GoogleCN,DIRECT"
+  - "RULE-SET,SteamCN,DIRECT"
+  - "RULE-SET,GitHub,🌐 全部节点"
+  - "RULE-SET,Microsoft,🌐 全部节点"
+  - "DOMAIN-SUFFIX,oray.com,DIRECT"
+  - "DOMAIN-SUFFIX,3322.net,DIRECT"
+  - "DOMAIN-SUFFIX,ipw.cn,DIRECT"
+  - "DOMAIN-SUFFIX,ipip.net,DIRECT"
+  - "RULE-SET,Apple,DIRECT"
+  - "RULE-SET,Telegram,🌐 全部节点"
+  - "RULE-SET,Twitter,🌐 全部节点"
+  - "RULE-SET,ChatGPT,🌐 全部节点"
+  - "RULE-SET,TikTok,🌐 全部节点"
+  - "RULE-SET,Instagram,🌐 全部节点"
+  - "RULE-SET,PayPal,🌐 全部节点"
+  - "RULE-SET,Steam,🌐 全部节点"
+  - "RULE-SET,YouTube,🌐 全部节点"
+  - "RULE-SET,Netflix,🌐 全部节点"
+  - "RULE-SET,ProxyMedia,🌐 全部节点"
+  - "RULE-SET,ProxyGFWlist,🌐 全部节点"
+  - "RULE-SET,BilibiliHMT,DIRECT"
+  - "RULE-SET,Bilibili,DIRECT"
+  - "RULE-SET,ChinaMedia,DIRECT"
+  - "RULE-SET,ChinaDomain,DIRECT"
+  - "RULE-SET,ChinaCompanyIp,DIRECT"
+  - "RULE-SET,Download,DIRECT"
+  - "GEOIP,CN,DIRECT"
+  - "MATCH,🌐 全部节点"
