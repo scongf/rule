@@ -231,5 +231,4 @@ rules:
   - "RULE-SET,ChinaDomain,DIRECT"
   - "RULE-SET,ChinaCompanyIp,DIRECT"
   - "RULE-SET,Download,DIRECT"
-  - "GEOIP,CN,DIRECT"
   - "MATCH,🌐 全部节点"
