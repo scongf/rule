@@ -126,6 +126,13 @@ rule-providers:
     interval: 86400
     format: text
     type: http
+  Docker:
+    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/Docker.list
+    path: ./ruleset/Docker.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
   Steam:
     url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Steam.list
     path: ./ruleset/Steam.list
@@ -222,7 +229,8 @@ rules:
   - "RULE-SET,ChatGPT,♻️ 自动选择"
   - "RULE-SET,TikTok,♻️ 自动选择"
   - "RULE-SET,Instagram,♻️ 自动选择"
-  - "RULE-SET,PayPal,🌐♻️ 自动选择"
+  - "RULE-SET,PayPal,♻️ 自动选择"
+  - "RULE-SET,Docker,♻️ 自动选择"
   - "RULE-SET,Steam,♻️ 自动选择"
   - "RULE-SET,YouTube,♻️ 自动选择"
   - "RULE-SET,Netflix,♻️ 自动选择"
