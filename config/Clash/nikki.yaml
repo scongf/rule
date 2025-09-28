@@ -57,7 +57,7 @@ rule-providers:
     format: text
     type: http
   SteamCN:
-    url: https://mirror.ghproxy.com/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/SteamCN.list
+    url: https://ghfast.top/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/SteamCN.list
     path: ./ruleset/SteamCN.list
     behavior: classical
     interval: 86400
