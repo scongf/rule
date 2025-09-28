@@ -9,7 +9,7 @@ proxy-groups:
     tolerance: 50
 
 geoip:
-  url: "https://mirror.ghproxy.com/https://github.com/Dreamacro/maxmind-geoip/raw/release/Country.mmdb"
+  url: "https://ghfast.top/https://github.com/Dreamacro/maxmind-geoip/raw/release/Country.mmdb"
   path: ./Country.mmdb
   download-detour: ♻️ 自动选择
 
