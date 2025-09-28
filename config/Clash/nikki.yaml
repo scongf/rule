@@ -91,6 +91,20 @@ rule-providers:
     interval: 86400
     format: text
     type: http
+  Tencent:
+    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Tencent.list
+    path: ./ruleset/Tencent.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Wechat:
+    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Wechat.list
+    path: ./ruleset/Wechat.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
   ChatGPT:
     url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/OpenAi.list
     path: ./ruleset/OpenAi.list
@@ -115,13 +129,6 @@ rule-providers:
   Instagram:
     url: https://gh.fusir.top:6767/https://github.com/ACL4SSR/ACL4SSR/raw/refs/heads/master/Clash/Ruleset/Instagram.list
     path: ./ruleset/Instagram.list
-    behavior: classical
-    interval: 86400
-    format: text
-    type: http
-  PayPal:
-    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/paypal.list
-    path: ./ruleset/PayPal.list
     behavior: classical
     interval: 86400
     format: text
@@ -229,13 +236,14 @@ rules:
   - "RULE-SET,ChatGPT,♻️ 自动选择"
   - "RULE-SET,TikTok,♻️ 自动选择"
   - "RULE-SET,Instagram,♻️ 自动选择"
-  - "RULE-SET,PayPal,♻️ 自动选择"
   - "RULE-SET,Docker,♻️ 自动选择"
   - "RULE-SET,Steam,♻️ 自动选择"
   - "RULE-SET,YouTube,♻️ 自动选择"
   - "RULE-SET,Netflix,♻️ 自动选择"
   - "RULE-SET,ProxyMedia,♻️ 自动选择"
   - "RULE-SET,ProxyGFWlist,♻️ 自动选择"
+  - "RULE-SET,Tencent,DIRECT"
+  - "RULE-SET,Wechat,DIRECT"
   - "RULE-SET,BilibiliHMT,DIRECT"
   - "RULE-SET,Bilibili,DIRECT"
   - "RULE-SET,ChinaMedia,DIRECT"
