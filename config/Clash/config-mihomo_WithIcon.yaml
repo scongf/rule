@@ -274,8 +274,15 @@ rule-providers:
     interval: 86400
     format: text
     type: http
-  Google:
+  GoogleFCM:
     url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleFCM.list
+    path: ./ruleset/GoogleFCM.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  Google:
+    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Google.list
     path: ./ruleset/Google.list
     behavior: classical
     interval: 86400
@@ -404,6 +411,7 @@ rule-providers:
 rules:
   - "RULE-SET,LocalAreaNetwork,全球直连"
   - "RULE-SET,UnBan,全球直连"
+  - "RULE-SET,GoogleFCM,Google"
   - "RULE-SET,Google,Google"
   - "RULE-SET,GoogleCN,全球直连"
   - "RULE-SET,Twitter,Twitter"
