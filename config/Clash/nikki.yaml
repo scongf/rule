@@ -64,7 +64,7 @@ rule-providers:
     format: text
     type: http
   GitHub:
-    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/Github.list
+    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Github.list
     path: ./ruleset/GitHub.list
     behavior: classical
     interval: 86400
@@ -127,7 +127,7 @@ rule-providers:
     format: text
     type: http
   Docker:
-    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/Docker.list
+    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Docker.list
     path: ./ruleset/Docker.list
     behavior: classical
     interval: 86400
