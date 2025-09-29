@@ -243,7 +243,7 @@ rule-providers:
     format: text
     type: http
   Google:
-    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Google.list
+    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.list
     path: ./ruleset/Google.list
     behavior: classical
     interval: 86400
@@ -257,35 +257,35 @@ rule-providers:
     format: text
     type: http
   SteamCN:
-    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/SteamCN.list
+    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/SteamCN/SteamCN.list
     path: ./ruleset/SteamCN.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   GitHub:
-    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Github.list
+    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/SteamCN/SteamCN.list
     path: ./ruleset/GitHub.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   Microsoft:
-    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Microsoft.list
+    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft.list
     path: ./ruleset/Microsoft.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   Apple:
-    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Apple.list
+    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple.list
     path: ./ruleset/Apple.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   Telegram:
-    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Telegram.list
+    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.list
     path: ./ruleset/Telegram.list
     behavior: classical
     interval: 86400
@@ -299,49 +299,49 @@ rule-providers:
     format: text
     type: http
   Twitter:
-    url: https://gh.fusir.top:6767/https://github.com/ACL4SSR/ACL4SSR/raw/refs/heads/master/Clash/Ruleset/Twitter.list
+    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitter/Twitter.list
     path: ./ruleset/Twitter.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   TikTok:
-    url: https://gh.fusir.top:6767/https://github.com/ACL4SSR/ACL4SSR/raw/refs/heads/master/Clash/Ruleset/TikTok.list
+    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/TikTok/TikTok.list
     path: ./ruleset/TikTok.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   Instagram:
-    url: https://gh.fusir.top:6767/https://github.com/ACL4SSR/ACL4SSR/raw/refs/heads/master/Clash/Ruleset/Instagram.list
+    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Instagram/Instagram.list
     path: ./ruleset/Instagram.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   Steam:
-    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Steam.list
+    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Steam/Steam.list
     path: ./ruleset/Steam.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   Binance:
-    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Binance.list
+    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Binance/Binance.list
     path: ./ruleset/Binance.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   YouTube:
-    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTube.list
+    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.list
     path: ./ruleset/YouTube.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   Netflix:
-    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Netflix.list
+    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix.list
     path: ./ruleset/Netflix.list
     behavior: classical
     interval: 86400
@@ -355,29 +355,29 @@ rule-providers:
     format: text
     type: http
   Bilibili:
-    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bilibili.list
+    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/BiliBili/BiliBili.list
     path: ./ruleset/Bilibili.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   Tencent:
-    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Tencent.list
+    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Tencent/Tencent.list
     path: ./ruleset/Tencent.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   Wechat:
-    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Wechat.list
+    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/WeChat/WeChat.list
     path: ./ruleset/Wechat.list
     behavior: classical
     interval: 86400
     format: text
     type: http
-  MI:
-    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/MI.list
-    path: ./ruleset/MI.list
+  XiaoMi:
+    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/XiaoMi/XiaoMi.list
+    path: ./ruleset/XiaoMi.list
     behavior: classical
     interval: 86400
     format: text
@@ -418,7 +418,7 @@ rule-providers:
     format: text
     type: http
   Download:
-    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list
+    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Download/Download.list
     path: ./ruleset/Download.list
     behavior: classical
     interval: 86400
@@ -450,7 +450,7 @@ rules:
   - "DOMAIN-SUFFIX,fusir.us.kg,DIRECT"
   - "RULE-SET,Tencent,DIRECT"
   - "RULE-SET,Wechat,DIRECT"
-  - "RULE-SET,MI,🎯 全球直连"
+  - "RULE-SET,XiaoMi,🎯 全球直连"
   - "RULE-SET,BilibiliHMT,🎯 全球直连"
   - "RULE-SET,Bilibili,🎯 全球直连"
   - "RULE-SET,ChinaMedia,🎯 全球直连"
