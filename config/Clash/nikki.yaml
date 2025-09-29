@@ -178,22 +178,15 @@ rule-providers:
     format: text
     type: http
   Bilibili:
-    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix.list
+    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/BiliBili/BiliBili.yaml
     path: ./ruleset/Bilibili.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   ChinaMedia:
-    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix.list
+    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaMedia.list
     path: ./ruleset/ChinaMedia.list
-    behavior: classical
-    interval: 86400
-    format: text
-    type: http
-  ProxyMedia:
-    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list
-    path: ./ruleset/ProxyMedia.list
     behavior: classical
     interval: 86400
     format: text
@@ -249,7 +242,6 @@ rules:
   - "RULE-SET,Steam,♻️ 自动选择"
   - "RULE-SET,YouTube,♻️ 自动选择"
   - "RULE-SET,Netflix,♻️ 自动选择"
-  - "RULE-SET,ProxyMedia,♻️ 自动选择"
   - "RULE-SET,ProxyGFWlist,♻️ 自动选择"
   - "RULE-SET,Tencent,DIRECT"
   - "RULE-SET,Wechat,DIRECT"
