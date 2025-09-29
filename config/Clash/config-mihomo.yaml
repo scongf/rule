@@ -208,7 +208,11 @@ proxy-groups:
   - name: 🌐 全部节点
     include-all: true
     type: select
-
+geoip:
+  url: "https://ghfast.top/https://github.com/Dreamacro/maxmind-geoip/raw/release/Country.mmdb"
+  path: ./Country.mmdb
+  download-detour: DIRECT
+  
 rule-providers:
   LocalAreaNetwork:
     url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
@@ -246,7 +250,7 @@ rule-providers:
     format: text
     type: http
   GoogleCN:
-    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleCN.list
+    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list
     path: ./ruleset/GoogleCN.list
     behavior: classical
     interval: 86400
@@ -281,15 +285,15 @@ rule-providers:
     format: text
     type: http
   Telegram:
-    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Telegram.list
+    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Telegram.list
     path: ./ruleset/Telegram.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   ChatGPT:
-    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/OpenAi.list
-    path: ./ruleset/OpenAi.list
+    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list
+    path: ./ruleset/AI.list
     behavior: classical
     interval: 86400
     format: text
@@ -322,6 +326,13 @@ rule-providers:
     interval: 86400
     format: text
     type: http
+  Binance:
+    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Binance.list
+    path: ./ruleset/Binance.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
   YouTube:
     url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTube.list
     path: ./ruleset/YouTube.list
@@ -330,7 +341,7 @@ rule-providers:
     format: text
     type: http
   Netflix:
-    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Netflix.list
+    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Netflix.list
     path: ./ruleset/Netflix.list
     behavior: classical
     interval: 86400
@@ -360,6 +371,13 @@ rule-providers:
   Wechat:
     url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Wechat.list
     path: ./ruleset/Wechat.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+  MI:
+    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/MI.list
+    path: ./ruleset/MI.list
     behavior: classical
     interval: 86400
     format: text
@@ -423,6 +441,7 @@ rules:
   - "RULE-SET,Instagram,📷 Instagram"
   - "RULE-SET,Steam,♻️ 香港自动"
   - "RULE-SET,YouTube,📹 YouTube"
+  - "RULE-SET,Binance,♻️ 香港自动"
   - "RULE-SET,Netflix,🎥 Netflix"
   - "RULE-SET,ProxyMedia,🚀 节点选择"
   - "RULE-SET,ProxyGFWlist,🚀 节点选择"
@@ -431,6 +450,7 @@ rules:
   - "DOMAIN-SUFFIX,fusir.us.kg,DIRECT"
   - "RULE-SET,Tencent,DIRECT"
   - "RULE-SET,Wechat,DIRECT"
+  - "RULE-SET,MI,🎯 全球直连"
   - "RULE-SET,BilibiliHMT,🎯 全球直连"
   - "RULE-SET,Bilibili,🎯 全球直连"
   - "RULE-SET,ChinaMedia,🎯 全球直连"
