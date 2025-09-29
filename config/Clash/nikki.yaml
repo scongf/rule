@@ -184,13 +184,6 @@ rule-providers:
     interval: 86400
     format: text
     type: http
-  ChinaMedia:
-    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaMedia.list
-    path: ./ruleset/ChinaMedia.list
-    behavior: classical
-    interval: 86400
-    format: text
-    type: http
   ProxyGFWlist:
     url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list
     path: ./ruleset/ProxyGFWlist.list
@@ -248,7 +241,6 @@ rules:
   - "RULE-SET,XiaoMi,DIRECT"
   - "RULE-SET,BilibiliHMT,DIRECT"
   - "RULE-SET,Bilibili,DIRECT"
-  - "RULE-SET,ChinaMedia,DIRECT"
   - "RULE-SET,ChinaDomain,DIRECT"
   - "RULE-SET,ChinaCompanyIp,DIRECT"
   - "RULE-SET,Download,DIRECT"
