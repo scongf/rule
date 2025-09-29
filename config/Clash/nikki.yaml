@@ -11,7 +11,7 @@ proxy-groups:
     tolerance: 50
 
 geoip:
-  url: "https://ghfast.top/https://github.com/Dreamacro/maxmind-geoip/raw/release/Country.mmdb"
+  url: "https://ghfast.top/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country.mmdb"
   path: ./Country.mmdb
   download-detour: ♻️ 自动选择
 
