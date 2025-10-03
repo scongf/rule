@@ -9,7 +9,6 @@ proxy-groups:
       - 🇸🇬 狮城节点
       - 🇰🇷 韩国节点
       - ♻️ 自动选择
-      - ♻️ 香港自动
       - 🌐 全部节点
       - DIRECT
   - name: 📹 YouTube
@@ -23,7 +22,6 @@ proxy-groups:
       - 🇸🇬 狮城节点
       - 🇰🇷 韩国节点
       - ♻️ 自动选择
-      - ♻️ 香港自动
       - 🌐 全部节点
       - DIRECT 
   - name: 🍀 Google
@@ -37,7 +35,6 @@ proxy-groups:
       - 🇸🇬 狮城节点
       - 🇰🇷 韩国节点
       - ♻️ 自动选择
-      - ♻️ 香港自动
       - 🌐 全部节点
       - DIRECT
   - name: 🤖 ChatGPT
@@ -51,7 +48,6 @@ proxy-groups:
       - 🇸🇬 狮城节点
       - 🇰🇷 韩国节点
       - ♻️ 自动选择
-      - ♻️ 香港自动
       - 🌐 全部节点
       - DIRECT
   - name: 💻 GitHub
@@ -65,7 +61,6 @@ proxy-groups:
       - 🇸🇬 狮城节点
       - 🇰🇷 韩国节点
       - ♻️ 自动选择
-      - ♻️ 香港自动
       - 🌐 全部节点
       - DIRECT
   - name: 🐬 Twitter
@@ -79,7 +74,6 @@ proxy-groups:
       - 🇸🇬 狮城节点
       - 🇰🇷 韩国节点
       - ♻️ 自动选择
-      - ♻️ 香港自动
       - 🌐 全部节点
       - DIRECT
   - name: 🪟 Microsoft
@@ -98,7 +92,6 @@ proxy-groups:
       - 🇸🇬 狮城节点
       - 🇰🇷 韩国节点
       - ♻️ 自动选择
-      - ♻️ 香港自动
       - 🌐 全部节点
       - DIRECT
   - name: 📲 Telegram
@@ -112,7 +105,6 @@ proxy-groups:
       - 🇸🇬 狮城节点
       - 🇰🇷 韩国节点
       - ♻️ 自动选择
-      - ♻️ 香港自动
       - 🌐 全部节点
       - DIRECT
   - name: 🎥 Netflix
@@ -126,7 +118,6 @@ proxy-groups:
       - 🇸🇬 狮城节点
       - 🇰🇷 韩国节点
       - ♻️ 自动选择
-      - ♻️ 香港自动
       - 🌐 全部节点
       - DIRECT
   - name: 📷 Instagram
@@ -140,14 +131,13 @@ proxy-groups:
       - 🇸🇬 狮城节点
       - 🇰🇷 韩国节点
       - ♻️ 自动选择
-      - ♻️ 香港自动
       - 🌐 全部节点
       - DIRECT
   - name: 🍎 Apple
     type: select
     proxies:
       - DIRECT
-      - ♻️ 香港自动
+      - 🇭🇰 香港节点
       - 🌐 全部节点
   - name: 🎯 全球直连
     type: select
@@ -165,7 +155,6 @@ proxy-groups:
       - 🇸🇬 狮城节点
       - 🇰🇷 韩国节点
       - ♻️ 自动选择
-      - ♻️ 香港自动
       - 🌐 全部节点
       - DIRECT
 
@@ -173,30 +162,36 @@ proxy-groups:
   - name: 🇼🇸 台湾节点
     include-all: true
     filter: (?i)台|新北|彰化|TW|Taiwan
-    type: select
+    type: url-test
+    interval: 300
+    tolerance: 50
   - name: 🇭🇰 香港节点
     include-all: true
     filter: (?i)港|HK|hk|Hong Kong|HongKong|hongkong
-    type: select
+    type: url-test
+    interval: 300
+    tolerance: 50
   - name: 🇯🇵 日本节点
     include-all: true
     filter: (?i)日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan
-    type: select
+    type: url-test
+    interval: 300
+    tolerance: 50
   - name: 🇺🇲 美国节点
     include-all: true
     filter: (?i)美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States
-    type: select
+    type: url-test
+    interval: 300
+    tolerance: 50
   - name: 🇸🇬 狮城节点
     include-all: true
     filter: (?i)新加坡|坡|狮城|SG|Singapore
-    type: select
+    type: url-test
+    interval: 300
+    tolerance: 50
   - name: 🇰🇷 韩国节点
     include-all: true
     filter: (?i)KR|Korea|KOR|首尔|韩|韓
-    type: select
-  - name: ♻️ 香港自动
-    include-all: true
-    filter: (?i)港|HK|hk|Hong Kong|HongKong|hongkong
     type: url-test
     interval: 300
     tolerance: 50
@@ -439,9 +434,9 @@ rules:
   - "RULE-SET,ChatGPT,🤖 ChatGPT"
   - "RULE-SET,TikTok,🎵 TikTok"
   - "RULE-SET,Instagram,📷 Instagram"
-  - "RULE-SET,Steam,♻️ 香港自动"
+  - "RULE-SET,Steam,🇭🇰 香港节点"
   - "RULE-SET,YouTube,📹 YouTube"
-  - "RULE-SET,Binance,♻️ 香港自动"
+  - "RULE-SET,Binance,🇭🇰 香港节点"
   - "RULE-SET,Netflix,🎥 Netflix"
   - "RULE-SET,ProxyMedia,🚀 节点选择"
   - "RULE-SET,ProxyGFWlist,🚀 节点选择"
