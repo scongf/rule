@@ -1,16 +1,15 @@
 {
 "dns": {
-    "fakeip": {"enabled": true,"inet4_range": "198.18.0.0/15","inet6_range": "fc00::/18"},
     "servers": [
-      {"tag": "proxy_dns","address": "https://8.8.8.8/dns-query","detour": "🚀 节点选择"},
-      {"tag": "direct_dns","address": "https://223.5.5.5/dns-query","detour": "🎯 全球直连"},
-      {"tag": "fakeip","address": "fakeip"}
+      {"tag": "proxy_dns","type": "https","server": "8.8.8.8","detour": "🚀 节点选择"},
+      {"tag": "direct_dns","type": "https","server": "223.5.5.5"，"detour": "🎯 全球直连"},
+      { "tag": "fakeip","type": "fakeip","inet4_range": "198.18.0.0/15","inet6_range": "fc00::/18"}
     ],
     "rules": [
-      {"outbound": "any","action": "route","server": "direct_dns","disable_cache": true},
       {"clash_mode": "Direct","action": "route","server": "direct_dns"},
       {"clash_mode": "Global","action": "route","server": "fakeip"},
       {"query_type": [ "A", "AAAA" ],"action": "route","server": "fakeip","rewrite_ttl": 1},
+      {"query_type": "HTTPS","action": "reject"},
       {
         "rule_set": "geosite-cn",
         "action": "route",
@@ -21,6 +20,7 @@
     "independent_cache": true
   },
   "route": {
+    default_domain_resolver": {"server": "direct_dns"},
     "rules": [
       {"ip_cidr": "192.168.2.0/24","outbound": "fsc"},
       {"action": "sniff","sniffer": ["http","tls","quic","dns"],"timeout": "500ms"},
@@ -38,7 +38,6 @@
       {"rule_set": ["geoip-google", "geosite-google"], "action": "route","outbound": "🍀 Google"},
       {"rule_set": "geosite-instagram","action": "route", "outbound": "📷 Instagram"},
       {"rule_set": ["geosite-twitter", "geosite-x"],"action": "route", "outbound": "🐬 Twitter"},
-      {"rule_set": "geosite-paypal","action": "route", "outbound": "💶 PayPal"},
       {"rule_set": ["geoip-telegram", "geosite-telegram"],"action": "route", "outbound": "📲 Telegram"},
       {"rule_set": "geosite-tiktok", "action": "route","outbound": "🎵 TikTok"},
       {"rule_set": ["geoip-netflix", "geosite-netflix"], "action": "route","outbound": "🎥 Netflix"},
@@ -62,7 +61,6 @@
       {"tag": "geoip-netflix", "type": "remote", "format": "binary", "url": "https://gh.fusir.top:6767/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/netflix.srs", "download_detour": "🎯 全球直连"},
       {"tag": "geosite-netflix", "type": "remote", "format": "binary", "url": "https://gh.fusir.top:6767/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/netflix.srs", "download_detour": "🎯 全球直连"},
       {"tag": "geosite-instagram", "type": "remote", "format": "binary", "url": "https://gh.fusir.top:6767/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/instagram.srs", "download_detour": "🎯 全球直连"},
-      {"tag": "geosite-paypal", "type": "remote", "format": "binary", "url": "https://gh.fusir.top:6767/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/paypal.srs", "download_detour": "🎯 全球直连"},
       {"tag": "geoip-apple", "type": "remote", "format": "binary", "url": "https://gh.fusir.top:6767/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo-lite/geoip/apple.srs", "download_detour": "🎯 全球直连"},
       {"tag": "geosite-apple", "type": "remote", "format": "binary", "url": "https://gh.fusir.top:6767/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/apple.srs", "download_detour": "🎯 全球直连"},
       {"tag": "geosite-geolocation-!cn", "type": "remote", "format": "binary", "url": "https://gh.fusir.top:6767/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/geolocation-!cn.srs", "download_detour": "🎯 全球直连"},
@@ -73,29 +71,27 @@
     "final": "🐟 漏网之鱼"
 },
 "outbounds": [
-  {"tag": "🚀 节点选择","type": "selector","outbounds": ["🇹🇼 台湾节点","🇭🇰 香港节点","🇯🇵 日本节点","🇺🇲 美国节点","🇸🇬 狮城节点","🇰🇷 韩国节点","♻️ 自动选择","♻️ 香港自动","🌐 全部节点","🎯 全球直连"],"default": "♻️ 自动选择"},
-  {"tag": "📹 YouTube","type": "selector","outbounds": ["🚀 节点选择","🇹🇼 台湾节点","🇭🇰 香港节点","🇯🇵 日本节点","🇺🇲 美国节点","🇸🇬 狮城节点","🇰🇷 韩国节点","♻️ 自动选择","♻️ 香港自动","🌐 全部节点"],"default": "♻️ 自动选择"},
-  {"tag": "🍀 Google","type": "selector","outbounds": ["🚀 节点选择","🇹🇼 台湾节点","🇭🇰 香港节点","🇯🇵 日本节点","🇺🇲 美国节点","🇸🇬 狮城节点","🇰🇷 韩国节点","♻️ 自动选择","♻️ 香港自动","🌐 全部节点"],"default": "♻️ 自动选择"},
-  {"tag": "🤖 ChatGPT","type": "selector","outbounds": ["🚀 节点选择","🇹🇼 台湾节点","🇭🇰 香港节点","🇯🇵 日本节点","🇺🇲 美国节点","🇸🇬 狮城节点","🇰🇷 韩国节点","♻️ 自动选择","♻️ 香港自动","🌐 全部节点"],"default": "♻️ 自动选择"},
-  {"tag": "💻 GitHub","type": "selector","outbounds": ["🚀 节点选择","🇹🇼 台湾节点","🇭🇰 香港节点","🇯🇵 日本节点","🇺🇲 美国节点","🇸🇬 狮城节点","🇰🇷 韩国节点","♻️ 自动选择","♻️ 香港自动","🌐 全部节点"],"default": "♻️ 自动选择"},
-  {"tag": "🐬 Twitter","type": "selector","outbounds": ["🚀 节点选择","🇹🇼 台湾节点","🇭🇰 香港节点","🇯🇵 日本节点","🇺🇲 美国节点","🇸🇬 狮城节点","🇰🇷 韩国节点","♻️ 自动选择","♻️ 香港自动","🌐 全部节点"],"default": "♻️ 自动选择"},
+  {"tag": "🚀 节点选择","type": "selector","outbounds": ["🇹🇼 台湾节点","🇭🇰 香港节点","🇯🇵 日本节点","🇺🇲 美国节点","🇸🇬 狮城节点","🇰🇷 韩国节点","♻️ 自动选择","🌐 全部节点","🎯 全球直连"],"default": "♻️ 自动选择"},
+  {"tag": "📹 YouTube","type": "selector","outbounds": ["🚀 节点选择","🇹🇼 台湾节点","🇭🇰 香港节点","🇯🇵 日本节点","🇺🇲 美国节点","🇸🇬 狮城节点","🇰🇷 韩国节点","♻️ 自动选择","🌐 全部节点"],"default": "♻️ 自动选择"},
+  {"tag": "🍀 Google","type": "selector","outbounds": ["🚀 节点选择","🇹🇼 台湾节点","🇭🇰 香港节点","🇯🇵 日本节点","🇺🇲 美国节点","🇸🇬 狮城节点","🇰🇷 韩国节点","♻️ 自动选择","🌐 全部节点"],"default": "♻️ 自动选择"},
+  {"tag": "🤖 ChatGPT","type": "selector","outbounds": ["🚀 节点选择","🇹🇼 台湾节点","🇭🇰 香港节点","🇯🇵 日本节点","🇺🇲 美国节点","🇸🇬 狮城节点","🇰🇷 韩国节点","♻️ 自动选择","🌐 全部节点"],"default": "🇺🇲 美国节点"},
+  {"tag": "💻 GitHub","type": "selector","outbounds": ["🚀 节点选择","🇹🇼 台湾节点","🇭🇰 香港节点","🇯🇵 日本节点","🇺🇲 美国节点","🇸🇬 狮城节点","🇰🇷 韩国节点","♻️ 自动选择","🌐 全部节点"],"default": "♻️ 自动选择"},
+  {"tag": "🐬 Twitter","type": "selector","outbounds": ["🚀 节点选择","🇹🇼 台湾节点","🇭🇰 香港节点","🇯🇵 日本节点","🇺🇲 美国节点","🇸🇬 狮城节点","🇰🇷 韩国节点","♻️ 自动选择","🌐 全部节点"],"default": "♻️ 自动选择"},
   {"tag": "🪟 Microsoft","type": "selector","outbounds":["🌐 全部节点","🎯 全球直连"],"default": "🎯 全球直连"},
-  {"tag": "🎵 TikTok","type": "selector","outbounds": ["🚀 节点选择","🇹🇼 台湾节点","🇭🇰 香港节点","🇯🇵 日本节点","🇺🇲 美国节点","🇸🇬 狮城节点","🇰🇷 韩国节点","♻️ 自动选择","♻️ 香港自动","🌐 全部节点"],"default": "♻️ 自动选择"},
-  {"tag": "📲 Telegram","type": "selector","outbounds": ["🚀 节点选择","🇹🇼 台湾节点","🇭🇰 香港节点","🇯🇵 日本节点","🇺🇲 美国节点","🇸🇬 狮城节点","🇰🇷 韩国节点","♻️ 自动选择","♻️ 香港自动","🌐 全部节点"],"default": "♻️ 自动选择"},
-  {"tag": "🎥 Netflix","type": "selector","outbounds": ["🚀 节点选择","🇹🇼 台湾节点","🇭🇰 香港节点","🇯🇵 日本节点","🇺🇲 美国节点","🇸🇬 狮城节点","🇰🇷 韩国节点","♻️ 自动选择","♻️ 香港自动","🌐 全部节点"],"default": "♻️ 自动选择"},
-  {"tag": "📷 Instagram","type": "selector","outbounds": ["🚀 节点选择","🇹🇼 台湾节点","🇭🇰 香港节点","🇯🇵 日本节点","🇺🇲 美国节点","🇸🇬 狮城节点","🇰🇷 韩国节点","♻️ 自动选择","♻️ 香港自动","🌐 全部节点"],"default": "♻️ 自动选择"},
-  {"tag": "💶 PayPal","type": "selector","outbounds": ["🚀 节点选择","🇹🇼 台湾节点","🇭🇰 香港节点","🇯🇵 日本节点","🇺🇲 美国节点","🇸🇬 狮城节点","🇰🇷 韩国节点","♻️ 自动选择","♻️ 香港自动","🌐 全部节点"],"default": "♻️ 自动选择"},
-  {"tag": "🍎 Apple","type": "selector","outbounds": ["♻️ 香港自动","🌐 全部节点","🎯 全球直连"],"default": "🎯 全球直连"},
+  {"tag": "🎵 TikTok","type": "selector","outbounds": ["🚀 节点选择","🇹🇼 台湾节点","🇭🇰 香港节点","🇯🇵 日本节点","🇺🇲 美国节点","🇸🇬 狮城节点","🇰🇷 韩国节点","♻️ 自动选择","🌐 全部节点"],"default": "♻️ 自动选择"},
+  {"tag": "📲 Telegram","type": "selector","outbounds": ["🚀 节点选择","🇹🇼 台湾节点","🇭🇰 香港节点","🇯🇵 日本节点","🇺🇲 美国节点","🇸🇬 狮城节点","🇰🇷 韩国节点","♻️ 自动选择","🌐 全部节点"],"default": "♻️ 自动选择"},
+  {"tag": "🎥 Netflix","type": "selector","outbounds": ["🚀 节点选择","🇹🇼 台湾节点","🇭🇰 香港节点","🇯🇵 日本节点","🇺🇲 美国节点","🇸🇬 狮城节点","🇰🇷 韩国节点","♻️ 自动选择","🌐 全部节点"],"default": "♻️ 自动选择"},
+  {"tag": "📷 Instagram","type": "selector","outbounds": ["🚀 节点选择","🇹🇼 台湾节点","🇭🇰 香港节点","🇯🇵 日本节点","🇺🇲 美国节点","🇸🇬 狮城节点","🇰🇷 韩国节点","♻️ 自动选择","🌐 全部节点"],"default": "♻️ 自动选择"},
+  {"tag": "🍎 Apple","type": "selector","outbounds": ["🇭🇰 香港节点","🎯 全球直连"],"default": "🎯 全球直连"},
   {"tag": "🎯 全球直连", "type": "direct"},
-  {"tag": "🐟 漏网之鱼","type": "selector","outbounds": ["🚀 节点选择","🇹🇼 台湾节点","🇭🇰 香港节点","🇯🇵 日本节点","🇺🇲 美国节点","🇸🇬 狮城节点","🇰🇷 韩国节点","♻️ 自动选择","♻️ 香港自动","🌐 全部节点"],"default": "♻️ 自动选择"},
-  {"tag": "🇹🇼 台湾节点","type": "selector","outbounds": []},
-  {"tag": "🇭🇰 香港节点","type": "selector","outbounds": []},
-  {"tag": "🇯🇵 日本节点","type": "selector","outbounds": []},
-  {"tag": "🇺🇲 美国节点","type": "selector","outbounds": []},
-  {"tag": "🇸🇬 狮城节点","type": "selector","outbounds": []},
-  {"tag": "🇰🇷 韩国节点","type": "selector","outbounds": []},
+  {"tag": "🐟 漏网之鱼","type": "selector","outbounds": ["🚀 节点选择","🇹🇼 台湾节点","🇭🇰 香港节点","🇯🇵 日本节点","🇺🇲 美国节点","🇸🇬 狮城节点","🇰🇷 韩国节点","♻️ 自动选择","🌐 全部节点"],"default": "♻️ 自动选择"},
+  {"tag": "🇹🇼 台湾节点","type": "selector","outbounds": [],"url": "https://www.gstatic.com/generate_204","interval": "1m","tolerance": 50},
+  {"tag": "🇭🇰 香港节点","type": "selector","outbounds": [],"url": "https://www.gstatic.com/generate_204","interval": "1m","tolerance": 50},
+  {"tag": "🇯🇵 日本节点","type": "selector","outbounds": [],"url": "https://www.gstatic.com/generate_204","interval": "1m","tolerance": 50},
+  {"tag": "🇺🇲 美国节点","type": "selector","outbounds": [],"url": "https://www.gstatic.com/generate_204","interval": "1m","tolerance": 50},
+  {"tag": "🇸🇬 狮城节点","type": "selector","outbounds": [],"url": "https://www.gstatic.com/generate_204","interval": "1m","tolerance": 50},
+  {"tag": "🇰🇷 韩国节点","type": "selector","outbounds": [],"url": "https://www.gstatic.com/generate_204","interval": "1m","tolerance": 50},
   {"tag": "♻️ 自动选择","type": "urltest","outbounds": [],"url": "https://www.gstatic.com/generate_204","interval": "1m","tolerance": 50},
-  {"tag": "♻️ 香港自动","type": "urltest","outbounds": [],"url": "https://www.gstatic.com/generate_204","interval": "1m","tolerance": 50},
   {"tag": "🌐 全部节点","type": "selector","outbounds": []},
   {"tag": "fsc","type": "shadowsocks","server": "v4.fusir.eu.org","server_port": 7788,"password": "sicong67","method": "aes-128-gcm"}
   ],
