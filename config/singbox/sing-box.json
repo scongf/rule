@@ -53,7 +53,7 @@
       {"tag": "geosite-openai", "type": "remote", "format": "binary", "url": "https://gh.fusir.top:6767/raw.githubusercontent.com/Toperlock/sing-box-geosite/main/rule/OpenAI.srs", "download_detour": "🎯 全球直连"},
       {"tag": "geosite-github", "type": "remote", "format": "binary", "url": "https://gh.fusir.top:6767/raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/github.srs", "download_detour": "🎯 全球直连"},
       {"tag": "geosite-twitter", "type": "remote", "format": "binary", "url": "https://gh.fusir.top:6767/raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/twitter.srs", "download_detour": "🎯 全球直连"},
-      {"tag": "geosite-x", "type": "remote", "format": "binary", "url": "https://gh.fusir.top:6767raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/x.srs", "download_detour": "🎯 全球直连"},
+      {"tag": "geosite-x", "type": "remote", "format": "binary", "url": "https://gh.fusir.top:6767/raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/x.srs", "download_detour": "🎯 全球直连"},
       {"tag": "geosite-microsoft", "type": "remote", "format": "binary", "url": "https://gh.fusir.top:6767/raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/microsoft@cn.srs", "download_detour": "🎯 全球直连"},
       {"tag": "geosite-tiktok", "type": "remote", "format": "binary", "url": "https://gh.fusir.top:6767/raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/tiktok.srs", "download_detour": "🎯 全球直连"},
       {"tag": "geoip-telegram", "type": "remote", "format": "binary", "url": "https://gh.fusir.top:6767/raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/telegram.srs", "download_detour": "🎯 全球直连"},
