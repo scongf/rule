@@ -19,7 +19,7 @@ config.outbounds.map(i => {
   if (['🌐 全部节点', '♻️ 自动选择'].includes(i.tag)) {
     i.outbounds.push(...getTags(proxies))
   }
-  if (['🇭🇰 香港节点','♻️ 香港自动'].includes(i.tag)) {
+  if (['🇭🇰 香港节点'].includes(i.tag)) {
     i.outbounds.push(...getTags(proxies, /港|香港|hk|hongkong|🇭🇰/i))
   }
   if (['🇹🇼 台湾节点'].includes(i.tag)) {
@@ -54,3 +54,4 @@ $content = JSON.stringify(config, null, 2)
 function getTags(proxies, regex) {
   return (regex ? proxies.filter(p => regex.test(p.tag)) : proxies).map(p => p.tag)
 }
+
