@@ -20,7 +20,7 @@
     "independent_cache": true
   },
   "route": {
-    default_domain_resolver": {"server": "direct_dns"},
+    "default_domain_resolver": {"server": "direct_dns"},
     "rules": [
       {"ip_cidr": "192.168.2.0/24","outbound": "fsc"},
       {"action": "sniff","sniffer": ["http","tls","quic","dns"],"timeout": "500ms"},
