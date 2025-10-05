@@ -7,7 +7,7 @@ proxy-groups:
   - name: ♻️ 自动选择
     type: url-test
     include-all: true
-    interval: 300
+    interval: 180
     tolerance: 5
 
 geoip:
