@@ -8,7 +8,7 @@ proxy-groups:
     type: url-test
     include-all: true
     interval: 300
-    tolerance: 50
+    tolerance: 5
 
 geoip:
   url: "https://ghfast.top/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country.mmdb"
