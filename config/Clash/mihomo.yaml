@@ -443,6 +443,7 @@ rules:
   - "DOMAIN-SUFFIX,fusir.top,DIRECT"
   - "DOMAIN-SUFFIX,fusir.eu.org,DIRECT"
   - "DOMAIN-SUFFIX,fusir.us.kg,DIRECT"
+  - "DOMAIN-SUFFIX,javdb.com,🇺🇲 美国节点"
   - "RULE-SET,Tencent,DIRECT"
   - "RULE-SET,Wechat,DIRECT"
   - "RULE-SET,XiaoMi,🎯 全球直连"
