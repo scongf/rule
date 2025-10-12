@@ -1,3 +1,11 @@
+mixed-port: 8080
+socks-port: 1080
+allow-lan: true
+bind-address: "*"
+mode: rule
+log-level: info
+ipv6: false
+
 proxy-groups:
   - name: 🌐 全部节点
     include-all: true
