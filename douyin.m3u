@@ -1,23 +1,23 @@
 #电视频道
-#EXTINF:-1 tvg-name="央视频" group-title="电视频道",央视频
+#EXTINF:-1 tvg-name="央视频" http-user-agent="AptvPlayer-UA" group-title="电视频道",央视频
 http://v4.fusir.eu.org:10782/douyin/uid/cctv.com
 
 #PUBG直播
-#EXTINF:-1 tvg-name="海绵" group-title="PUBG直播",海绵
+#EXTINF:-1 tvg-name="海绵" http-user-agent="AptvPlayer-UA" group-title="PUBG直播",海绵
 http://v4.fusir.eu.org:10782/douyin/rid/99476107632
-#EXTINF:-1 tvg-name="PUBG" group-title="PUBG直播",PUBG
+#EXTINF:-1 tvg-name="PUBG" http-user-agent="AptvPlayer-UA" group-title="PUBG直播",PUBG
 http://v4.fusir.eu.org:10782/douyin/rid/720972352226
-#EXTINF:-1 tvg-name="电竞讲师胖森" group-title="PUBG直播",电竞讲师胖森
+#EXTINF:-1 tvg-name="电竞讲师胖森" http-user-agent="AptvPlayer-UA" group-title="PUBG直播",电竞讲师胖森
 http://v4.fusir.eu.org:10782/douyin/rid/566388326775
 
 #暗区突围直播
-#EXTINF:-1 tvg-name="冷心" group-title="暗区突围",冷心
+#EXTINF:-1 tvg-name="冷心" http-user-agent="AptvPlayer-UA" group-title="暗区突围",冷心
 http://v4.fusir.eu.org:10782/douyin/uid/As.ZhangAao
-#EXTINF:-1 tvg-name="齐物论" group-title="暗区突围",齐物论
+#EXTINF:-1 tvg-name="齐物论" http-user-agent="AptvPlayer-UA" group-title="暗区突围",齐物论
 http://v4.fusir.eu.org:10782/douyin/rid/488434248288932
-#EXTINF:-1 tvg-name="自信" group-title="暗区突围",自信
+#EXTINF:-1 tvg-name="自信" http-user-agent="AptvPlayer-UA" group-title="暗区突围",自信
 http://v4.fusir.eu.org:10782/douyin/uid/78451119590
-#EXTINF:-1 tvg-name="云帆Ysl" group-title="暗区突围",云帆Ysl
+#EXTINF:-1 tvg-name="云帆Ysl" http-user-agent="AptvPlayer-UA" group-title="暗区突围",云帆Ysl
 http://v4.fusir.eu.org:10782/douyin/rid/858961408131
-#EXTINF:-1 tvg-name="芥末" group-title="暗区突围",芥末
+#EXTINF:-1 tvg-name="芥末" http-user-agent="AptvPlayer-UA" group-title="暗区突围",芥末
 http://v4.fusir.eu.org:10782/douyin/uid/jiemo777
