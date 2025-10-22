@@ -31,44 +31,9 @@ rule-providers:
     interval: 86400
     format: text
     type: http
-  UnBan:
-    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list
-    path: ./ruleset/UnBan.list
-    behavior: classical
-    interval: 86400
-    format: text
-    type: http
-  BanAD:
-    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
-    path: ./ruleset/BanAD.list
-    behavior: classical
-    interval: 86400
-    format: text
-    type: http
-  BanProgramAD:
-    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
-    path: ./ruleset/BanProgramAD.list
-    behavior: classical
-    interval: 86400
-    format: text
-    type: http
   Google:
     url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.list
     path: ./ruleset/Google.list
-    behavior: classical
-    interval: 86400
-    format: text
-    type: http
-  GoogleCN:
-    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list
-    path: ./ruleset/GoogleCN.list
-    behavior: classical
-    interval: 86400
-    format: text
-    type: http
-  SteamCN:
-    url: https://ghfast.top//https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/SteamCN/SteamCN.list
-    path: ./ruleset/SteamCN.list
     behavior: classical
     interval: 86400
     format: text
@@ -223,10 +188,7 @@ rule-providers:
 
 rules:
   - "RULE-SET,LocalAreaNetwork,DIRECT"
-  - "RULE-SET,UnBan,DIRECT"
   - "RULE-SET,Google,♻️ 自动选择"
-  - "RULE-SET,GoogleCN,DIRECT"
-  - "RULE-SET,SteamCN,DIRECT"
   - "RULE-SET,GitHub,♻️ 自动选择"
   - "RULE-SET,Microsoft,♻️ 自动选择"
   - "DOMAIN-SUFFIX,oray.com,DIRECT"
