@@ -13,7 +13,7 @@ http://v4.fusir.eu.org:10782/douyin/uid/cctv6media.
 http://v4.fusir.eu.org:10782/douyin/uid/kuaikancctv
 
 #EXTINF:-1 tvg-name="CCTV-13" group-title="电视频道",CCTV-13
-http://v4.fusir.eu.org:10782/douyin/uid/cctv.com?stream=hls
+http://v4.fusir.eu.org:10782/douyin/uid/cctvnews?stream=hls
 
 #EXTINF:-1 tvg-name="海绵" group-title="PUBG直播",海绵
 http://v4.fusir.eu.org:10782/douyin/rid/99476107632
