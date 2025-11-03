@@ -6,6 +6,9 @@ http://v4.fusir.eu.org:10782/douyin/uid/CCTV1?stream=hls
 #EXTINF:-1 tvg-name="CCTV-2" group-title="电视频道",CCTV-2
 http://v4.fusir.eu.org:10782/douyin/uid/nuanxinnengl?stream=hls
 
+#EXTINF:-1 tvg-name="CCTV-4" group-title="电视频道",CCTV-2
+http://v4.fusir.eu.org:10782/douyin/uid/CCTV4..
+
 #EXTINF:-1 tvg-name="CCTV-6" group-title="电视频道",CCTV-6
 http://v4.fusir.eu.org:10782/douyin/uid/cctv6media.
 
