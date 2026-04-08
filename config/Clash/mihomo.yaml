@@ -251,6 +251,15 @@ rule-providers:
     interval: 86400
     format: text
     type: http
+
+  Gemini:
+    url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Gemini/Gemini.list
+    path: ./ruleset/Gemini.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
+
   GoogleCN:
     url: https://gh.fusir.top:6767/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list
     path: ./ruleset/GoogleCN.list
@@ -433,6 +442,7 @@ rules:
   - "RULE-SET,GoogleFCM,🇺🇲 美国节点"
   - "RULE-SET,YouTube,📹 YouTube"
   - "RULE-SET,GoogleCN,🎯 全球直连"
+  - "RULE-SET,Gemini,🍀 Google"
   - "RULE-SET,Google,🍀 Google"
   - "RULE-SET,GitHub,💻 GitHub"
   - "RULE-SET,Microsoft,🪟 Microsoft"
