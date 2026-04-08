@@ -442,7 +442,7 @@ rules:
   - "RULE-SET,GoogleFCM,🇺🇲 美国节点"
   - "RULE-SET,YouTube,📹 YouTube"
   - "RULE-SET,GoogleCN,🎯 全球直连"
-  - "RULE-SET,Gemini,🍀 Google"
+  - "RULE-SET,Gemini,🇺🇲 美国节点"
   - "RULE-SET,Google,🍀 Google"
   - "RULE-SET,GitHub,💻 GitHub"
   - "RULE-SET,Microsoft,🪟 Microsoft"
