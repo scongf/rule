@@ -41,15 +41,8 @@ proxy-groups:
     type: select
     proxies:
       - 🚀 节点选择
-      - 🇹🇼 台湾节点
-      - 🇭🇰 香港节点
-      - 🇯🇵 日本节点
-      - 🇺🇲 美国节点
-      - 🇸🇬 狮城节点
-      - 🇰🇷 韩国节点
       - ♻️ 自动选择
       - 🌐 全部节点
-      - DIRECT
   - name: 💻 GitHub
     type: select
     proxies:
@@ -442,7 +435,7 @@ rules:
   - "RULE-SET,GoogleFCM,🇺🇲 美国节点"
   - "RULE-SET,YouTube,📹 YouTube"
   - "RULE-SET,GoogleCN,🎯 全球直连"
-  - "RULE-SET,Gemini,🍀 Google"
+  - "RULE-SET,Gemini,🤖 ChatGPT"
   - "RULE-SET,Google,🍀 Google"
   - "RULE-SET,GitHub,💻 GitHub"
   - "RULE-SET,Microsoft,🪟 Microsoft"
