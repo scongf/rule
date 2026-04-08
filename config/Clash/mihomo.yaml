@@ -56,24 +56,6 @@ proxy-groups:
       - ♻️ 自动选择
       - 🌐 全部节点
       - DIRECT
-  - name: 🐬 Twitter
-    type: select
-    proxies:
-      - 🚀 节点选择
-      - 🇹🇼 台湾节点
-      - 🇭🇰 香港节点
-      - 🇯🇵 日本节点
-      - 🇺🇲 美国节点
-      - 🇸🇬 狮城节点
-      - 🇰🇷 韩国节点
-      - ♻️ 自动选择
-      - 🌐 全部节点
-      - DIRECT
-  - name: 🪟 Microsoft
-    type: select
-    proxies:
-      - DIRECT
-      - 🌐 全部节点
   - name: 🎵 TikTok
     type: select
     proxies:
@@ -88,32 +70,6 @@ proxy-groups:
       - 🌐 全部节点
       - DIRECT
   - name: 📲 Telegram
-    type: select
-    proxies:
-      - 🚀 节点选择
-      - 🇹🇼 台湾节点
-      - 🇭🇰 香港节点
-      - 🇯🇵 日本节点
-      - 🇺🇲 美国节点
-      - 🇸🇬 狮城节点
-      - 🇰🇷 韩国节点
-      - ♻️ 自动选择
-      - 🌐 全部节点
-      - DIRECT
-  - name: 🎥 Netflix
-    type: select
-    proxies:
-      - 🚀 节点选择
-      - 🇹🇼 台湾节点
-      - 🇭🇰 香港节点
-      - 🇯🇵 日本节点
-      - 🇺🇲 美国节点
-      - 🇸🇬 狮城节点
-      - 🇰🇷 韩国节点
-      - ♻️ 自动选择
-      - 🌐 全部节点
-      - DIRECT
-  - name: 📷 Instagram
     type: select
     proxies:
       - 🚀 节点选择
@@ -438,21 +394,21 @@ rules:
   - "RULE-SET,Gemini,🤖 ChatGPT"
   - "RULE-SET,Google,🍀 Google"
   - "RULE-SET,GitHub,💻 GitHub"
-  - "RULE-SET,Microsoft,🪟 Microsoft"
+  - "RULE-SET,Microsoft,🎯 全球直连"
   - "RULE-SET,Apple,🍎 Apple"
   - "RULE-SET,Telegram,📲 Telegram"
-  - "RULE-SET,Twitter,🐬 Twitter"
+  - "RULE-SET,Twitter,📲 Telegram"
   - "RULE-SET,ChatGPT,🤖 ChatGPT"
   - "RULE-SET,TikTok,🎵 TikTok"
-  - "RULE-SET,Instagram,📷 Instagram"
+  - "RULE-SET,Instagram,📲 Telegram"
   - "RULE-SET,SteamCN,🎯 全球直连"
   - "RULE-SET,Steam,🇭🇰 香港节点"
   - "RULE-SET,Binance,🇭🇰 香港节点"
-  - "RULE-SET,Netflix,🎥 Netflix"
+  - "RULE-SET,Netflix,📲 Telegram"
   - "DOMAIN-SUFFIX,fusir.top,DIRECT"
   - "DOMAIN-SUFFIX,fusir.eu.org,DIRECT"
   - "DOMAIN-SUFFIX,fusir.us.kg,DIRECT"
-  - "DOMAIN-SUFFIX,javdb.com,🇺🇲 美国节点"
+  - "DOMAIN-SUFFIX,javdb.com,🇭🇰 香港节点"
   - "RULE-SET,Tencent,DIRECT"
   - "RULE-SET,Wechat,DIRECT"
   - "RULE-SET,XiaoMi,🎯 全球直连"
