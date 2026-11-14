@@ -19,167 +19,167 @@ proxy-groups:
     tolerance: 5
 
 geoip:
-  url: "https://ghfast.top/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country.mmdb"
+  url: "https://gh-proxy.org/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country.mmdb"
   path: ./Country.mmdb
   download-detour: ♻️ 自动选择
 
 rule-providers:
   LocalAreaNetwork:
-    url: https://ghfast.top/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
+    url: https://gh-proxy.org/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
     path: ./ruleset/LocalAreaNetwork.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   Google:
-    url:https://ghfast.top/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.list
+    url: https://gh-proxy.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.list
     path: ./ruleset/Google.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   GitHub:
-    url: https://ghfast.top//https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GitHub/GitHub.list
+    url: https://gh-proxy.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GitHub/GitHub.list
     path: ./ruleset/GitHub.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   Microsoft:
-    url: https://ghfast.top/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft.list
+    url: https://gh-proxy.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft.list
     path: ./ruleset/Microsoft.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   Apple:
-    url: https://ghfast.top/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple.list
+    url: https://gh-proxy.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple.list
     path: ./ruleset/Apple.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   Telegram:
-    url: https://ghfast.top/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.list
+    url: https://gh-proxy.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.list
     path: ./ruleset/Telegram.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   Tencent:
-    url: https://ghfast.top/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Tencent/Tencent.list
+    url: https://gh-proxy.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Tencent/Tencent.list
     path: ./ruleset/Tencent.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   Wechat:
-    url: https://ghfast.top/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/WeChat/WeChat.list
+    url: https://gh-proxy.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/WeChat/WeChat.list
     path: ./ruleset/Wechat.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   XiaoMi:
-    url: https://ghfast.top/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/XiaoMi/XiaoMi.list
+    url: https://gh-proxy.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/XiaoMi/XiaoMi.list
     path: ./ruleset/XiaoMi.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   ChatGPT:
-    url: https://ghfast.top/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.list
+    url: https://gh-proxy.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.list
     path: ./ruleset/OpenAi.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   Twitter:
-    url: https://ghfast.top/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitter/Twitter.list
+    url: https://gh-proxy.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitter/Twitter.list
     path: ./ruleset/Twitter.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   TikTok:
-    url: https://ghfast.top/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/TikTok/TikTok.list
+    url: https://gh-proxy.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/TikTok/TikTok.list
     path: ./ruleset/TikTok.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   Instagram:
-    url: https://ghfast.top/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Instagram/Instagram.list
+    url: https://gh-proxy.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Instagram/Instagram.list
     path: ./ruleset/Instagram.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   Docker:
-    url:https://ghfast.top/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Docker/Docker.list
+    url: https://gh-proxy.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Docker/Docker.list
     path: ./ruleset/Docker.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   Steam:
-    url: https://ghfast.top/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Steam/Steam.list
+    url: https://gh-proxy.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Steam/Steam.list
     path: ./ruleset/Steam.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   YouTube:
-    url: https://ghfast.top/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.list
+    url: https://gh-proxy.org/https://gh-proxy.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.list
     path: ./ruleset/YouTube.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   Netflix:
-    url: https://ghfast.top/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix.list
+    url: https://gh-proxy.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix.list
     path: ./ruleset/Netflix.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   BilibiliHMT:
-    url: https://ghfast.top/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/BilibiliHMT.list
+    url: https://gh-proxy.org/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/BilibiliHMT.list
     path: ./ruleset/BilibiliHMT.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   Bilibili:
-    url: https://ghfast.top/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/BiliBili/BiliBili.list
+    url: https://gh-proxy.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/BiliBili/BiliBili.list
     path: ./ruleset/Bilibili.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   ProxyGFWlist:
-    url: https://ghfast.top/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list
+    url: https://gh-proxy.org/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list
     path: ./ruleset/ProxyGFWlist.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   ChinaDomain:
-    url: https://ghfast.top/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
+    url: https://gh-proxy.org/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
     path: ./ruleset/ChinaDomain.list
     behavior: domain
     interval: 86400
     format: text
     type: http
   ChinaCompanyIp:
-    url: https://ghfast.top/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
+    url: https://gh-proxy.org/https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
     path: ./ruleset/ChinaCompanyIp.list
     behavior: ipcidr
     interval: 86400
     format: text
     type: http
   Download:
-    url: https://ghfast.top/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Download/Download.list
+    url: https://gh-proxy.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Download/Download.list
     path: ./ruleset/Download.list
     behavior: classical
     interval: 86400
