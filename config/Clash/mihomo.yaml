@@ -7,57 +7,45 @@ proxy-groups:
   - name: 🌐 全部节点
     include-all: true
     type: select
-  - name: 🚀 节点选择
-    type: select
-    proxies:
-      - 🇹🇼 台湾节点
-      - 🇭🇰 香港节点
-      - 🇯🇵 日本节点
-      - 🇺🇲 美国节点
-      - 🇸🇬 狮城节点
-      - 🇰🇷 韩国节点
-      - ♻️ 自动选择
-      - 🌐 全部节点
-      - DIRECT
   - name: 🍀 Google
     type: select
     proxies:
-      - 🚀 节点选择
+      - 🇺🇲 美国节点
+      - ♻️ 自动选择
+      - 🌐 全部节点
       - 🇹🇼 台湾节点
       - 🇭🇰 香港节点
       - 🇯🇵 日本节点
-      - 🇺🇲 美国节点
       - 🇸🇬 狮城节点
       - 🇰🇷 韩国节点
-      - ♻️ 自动选择
-      - 🌐 全部节点
+      - 🚀 节点选择
       - DIRECT
   - name: 📲 Telegram
     type: select
     proxies:
-      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🌐 全部节点
       - 🇹🇼 台湾节点
       - 🇭🇰 香港节点
       - 🇯🇵 日本节点
       - 🇺🇲 美国节点
       - 🇸🇬 狮城节点
       - 🇰🇷 韩国节点
-      - ♻️ 自动选择
-      - 🌐 全部节点
+      - 🚀 节点选择
       - DIRECT
   - name: 📹 YouTube
     type: select
     proxies:
-      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🌐 全部节点
       - 🇹🇼 台湾节点
       - 🇭🇰 香港节点
       - 🇯🇵 日本节点
       - 🇺🇲 美国节点
       - 🇸🇬 狮城节点
       - 🇰🇷 韩国节点
-      - ♻️ 自动选择
-      - 🌐 全部节点
-      - DIRECT 
+      - 🚀 节点选择
+      - DIRECT
   - name: 🤖 ChatGPT
     type: select
     proxies:
@@ -67,15 +55,15 @@ proxy-groups:
   - name: 💻 GitHub
     type: select
     proxies:
-      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🌐 全部节点
       - 🇹🇼 台湾节点
       - 🇭🇰 香港节点
       - 🇯🇵 日本节点
       - 🇺🇲 美国节点
       - 🇸🇬 狮城节点
       - 🇰🇷 韩国节点
-      - ♻️ 自动选择
-      - 🌐 全部节点
+      - 🚀 节点选择
       - DIRECT
   - name: 🍎 Apple
     type: select
@@ -91,6 +79,7 @@ proxy-groups:
   - name: 🐟 漏网之鱼
     type: select
     proxies:
+      - ♻️ 自动选择
       - 🚀 节点选择
       - 🇹🇼 台湾节点
       - 🇭🇰 香港节点
@@ -98,7 +87,6 @@ proxy-groups:
       - 🇺🇲 美国节点
       - 🇸🇬 狮城节点
       - 🇰🇷 韩国节点
-      - ♻️ 自动选择
       - 🌐 全部节点
       - DIRECT
   - name: 🇹🇼 台湾节点
@@ -137,8 +125,20 @@ proxy-groups:
     type: url-test
     interval: 300
     tolerance: 50
+  - name: 🚀 节点选择
+    type: select
+    proxies:
+      - ♻️ 自动选择
+      - 🇹🇼 台湾节点
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - 🌐 全部节点
+      - DIRECT
 geoip:
-  url: "https://ghfast.top/https://github.com/Dreamacro/maxmind-geoip/raw/release/Country.mmdb"
+  url: "https://gh.fusir.top:6767/https://github.com/Dreamacro/maxmind-geoip/raw/release/Country.mmdb"
   path: ./Country.mmdb
   download-detour: DIRECT
   
@@ -384,7 +384,7 @@ rules:
   - "RULE-SET,Telegram,📲 Telegram"
   - "RULE-SET,Twitter,📲 Telegram"
   - "RULE-SET,ChatGPT,🤖 ChatGPT"
-  - "RULE-SET,TikTok,🎵 TikTok"
+  - "RULE-SET,TikTok,🇺🇲 美国节点"
   - "RULE-SET,Instagram,📲 Telegram"
   - "RULE-SET,SteamCN,🎯 全球直连"
   - "RULE-SET,Steam,🇭🇰 香港节点"
