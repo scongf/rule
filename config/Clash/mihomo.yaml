@@ -65,6 +65,19 @@ proxy-groups:
       - 🇰🇷 韩国节点
       - 🚀 节点选择
       - DIRECT
+  - name: 🐟 漏网之鱼
+    type: select
+    proxies:
+      - ♻️ 自动选择
+      - 🌐 全部节点
+      - 🇹🇼 台湾节点
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - 🚀 节点选择
+      - DIRECT
   - name: 🍎 Apple
     type: select
     proxies:
@@ -76,19 +89,6 @@ proxy-groups:
     proxies:
       - DIRECT
       - 🚀 节点选择
-  - name: 🐟 漏网之鱼
-    type: select
-    proxies:
-      - ♻️ 自动选择
-      - 🚀 节点选择
-      - 🇹🇼 台湾节点
-      - 🇭🇰 香港节点
-      - 🇯🇵 日本节点
-      - 🇺🇲 美国节点
-      - 🇸🇬 狮城节点
-      - 🇰🇷 韩国节点
-      - 🌐 全部节点
-      - DIRECT
   - name: 🇹🇼 台湾节点
     include-all: true
     filter: (?i)台|新北|彰化|TW|Taiwan
