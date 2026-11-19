@@ -1,7 +1,41 @@
 proxy-groups:
+  - name: ♻️ 自动选择
+    type: url-test
+    include-all: true
+    interval: 300
+    tolerance: 50
+  - name: 🌐 全部节点
+    include-all: true
+    type: select
   - name: 🚀 节点选择
     type: select
     proxies:
+      - 🇹🇼 台湾节点
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - ♻️ 自动选择
+      - 🌐 全部节点
+      - DIRECT
+  - name: 🍀 Google
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🇹🇼 台湾节点
+      - 🇭🇰 香港节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇸🇬 狮城节点
+      - 🇰🇷 韩国节点
+      - ♻️ 自动选择
+      - 🌐 全部节点
+      - DIRECT
+  - name: 📲 Telegram
+    type: select
+    proxies:
+      - 🚀 节点选择
       - 🇹🇼 台湾节点
       - 🇭🇰 香港节点
       - 🇯🇵 日本节点
@@ -24,52 +58,13 @@ proxy-groups:
       - ♻️ 自动选择
       - 🌐 全部节点
       - DIRECT 
-  - name: 🍀 Google
-    type: select
-    proxies:
-      - 🚀 节点选择
-      - 🇹🇼 台湾节点
-      - 🇭🇰 香港节点
-      - 🇯🇵 日本节点
-      - 🇺🇲 美国节点
-      - 🇸🇬 狮城节点
-      - 🇰🇷 韩国节点
-      - ♻️ 自动选择
-      - 🌐 全部节点
-      - DIRECT
   - name: 🤖 ChatGPT
     type: select
     proxies:
-      - 🚀 节点选择
+      - 🇺🇲 美国节点
       - ♻️ 自动选择
       - 🌐 全部节点
   - name: 💻 GitHub
-    type: select
-    proxies:
-      - 🚀 节点选择
-      - 🇹🇼 台湾节点
-      - 🇭🇰 香港节点
-      - 🇯🇵 日本节点
-      - 🇺🇲 美国节点
-      - 🇸🇬 狮城节点
-      - 🇰🇷 韩国节点
-      - ♻️ 自动选择
-      - 🌐 全部节点
-      - DIRECT
-  - name: 🎵 TikTok
-    type: select
-    proxies:
-      - 🚀 节点选择
-      - 🇹🇼 台湾节点
-      - 🇭🇰 香港节点
-      - 🇯🇵 日本节点
-      - 🇺🇲 美国节点
-      - 🇸🇬 狮城节点
-      - 🇰🇷 韩国节点
-      - ♻️ 自动选择
-      - 🌐 全部节点
-      - DIRECT
-  - name: 📲 Telegram
     type: select
     proxies:
       - 🚀 节点选择
@@ -106,8 +101,6 @@ proxy-groups:
       - ♻️ 自动选择
       - 🌐 全部节点
       - DIRECT
-
-
   - name: 🇹🇼 台湾节点
     include-all: true
     filter: (?i)台|新北|彰化|TW|Taiwan
@@ -144,14 +137,6 @@ proxy-groups:
     type: url-test
     interval: 300
     tolerance: 50
-  - name: ♻️ 自动选择
-    type: url-test
-    include-all: true
-    interval: 300
-    tolerance: 50
-  - name: 🌐 全部节点
-    include-all: true
-    type: select
 geoip:
   url: "https://ghfast.top/https://github.com/Dreamacro/maxmind-geoip/raw/release/Country.mmdb"
   path: ./Country.mmdb
